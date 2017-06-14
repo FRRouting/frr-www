@@ -1,0 +1,67 @@
+#! /bin/bash -e
+#-------------------------------------------------------------------------------
+#
+# Copyright 2017 Cumulus Networks, inc all rights reserved
+# author: jrrivers@cumulusnetworks.com
+# license: GPL-2
+#
+# Pulls the FRR user guide from a source/build tree into the web site tree and
+# applies the web site styles
+#
+#-------------------------------------------------------------------------------
+
+usage() {
+    [ "$*" == "" ] || echo; echo "$*"
+    echo
+    echo "$0 pulls the FRR user guide from a source/build tree into the web site tree and"
+    echo "applies the web site styles."
+    echo
+    echo "usage: $0 <path-to-frr-build-tree>"
+    echo "       <path-to-frr-build-tree> points to a project source tree in which the docs have"
+    echo "       been build using \"make html\"."
+    echo
+    exit 1
+}
+
+#-------------------------------------------------------------------------------
+
+# Sanity check the source directory
+#
+[ $# == 1 ] ||
+    usage "Expecting a pointer to a build tree"
+[ -d $1/zebra ] ||
+    usage "\"$1\" does not look like an frr source/build directory"
+
+SRC_DIR=$1/doc/frr.html
+[ -d $SRC_DIR ] ||
+    usage "Does not look like you've built frr docs in \"$1\".  Try \"make html\""
+
+SRC_DIR=$1/doc/frr.html
+[ -f $SRC_DIR/index.html ] ||
+    usage "Does not look like you've built frr docs in \"$1\".  Try \"make html\""
+
+# Prep the destination directory
+DST_DIR=www/user-guide
+rm -rf $DST_DIR/*
+
+#-------------------------------------------------------------------------------
+#
+# Pull in the manual
+#
+for I in $SRC_DIR/*
+do
+    F=$DST_DIR/$(basename $I)
+    case $F in
+	*.html)  echo "styling ... $F"
+		 touch $F
+		 cat templates/header.html >> $F
+		 sed -e '/^<\/style>$/ r css-links' $I >> $F
+		 cat templates/footer.html >> $F
+		 ;;
+	*)       echo "copying ... $F"
+		 cp $I $F
+		 ;;
+    esac
+done
+
+exit 0

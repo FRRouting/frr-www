@@ -1,0 +1,41 @@
+#! /bin/bash
+#-----------------------------------------------------------------------------------------
+#
+# Copyright 2017 Cumulus Networks, inc all rights reserved
+# author: jrrivers@cumulusnetworks.com
+# license: GPL-2
+#
+# generate community html files from markdown files
+#
+#-----------------------------------------------------------------------------------------
+
+usage() {
+    [ "$*" == "" ] || echo; echo "ERROR: $*"
+    echo
+    echo "$0 generates community html files from markdown files"
+    echo
+    echo "usage: $0"
+    echo
+    exit 1
+}
+
+#-----------------------------------------------------------------------------------------
+
+# sanity check
+#
+
+[ $(which markdown) ] ||
+    usage "Need access to markdown, you should run this on the web server"
+
+#-----------------------------------------------------------------------------------------
+
+for I in community/*.md; do
+    F="www/community/$(basename ${I} .md).html"
+    echo "converting ... $I"
+    cat templates/header.html >  $F
+    markdown $I               >> $F
+    cat templates/footer.html >> $F
+    chgrp frr-web $F
+done
+
+exit 0

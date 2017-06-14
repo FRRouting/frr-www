@@ -1,0 +1,109 @@
+#! /bin/bash
+#-----------------------------------------------------------------------------------------
+#
+# Copyright 2017 Cumulus Networks, inc all rights reserved
+# author: jrrivers@cumulusnetworks.com
+# license: GPL-2
+#
+## This script aids in the deployment of the frrouting web site.  For actions that require
+## super-user priviledge, the script does the check and suggests appropriate actions.  For
+## actions such as generating/formatting html files from source, the script does it all for
+## the user.
+## 
+## CHECKS
+## - all required application packages are installed
+## - nginx (web server) has the correct configuration and is running with those configs
+## - nginx has the correct SSL keys installed
+## - the group frr-web exists and all files in this directory are owned by that group
+## 
+#-----------------------------------------------------------------------------------------
+
+usage() {
+    [ "$*" == "" ] || echo; echo "ERROR: $*"
+    echo "usage: $0"
+    echo
+    sed -n -e "s/^## //p" $0
+    exit 1
+}
+
+#-----------------------------------------------------------------------------------------
+#
+# CHECKS
+#
+
+check-pkgs() {
+
+    local RC=0
+
+    # apt managed packages
+    #
+    for I in nginx nodejs-legacy npm git; do
+        dpkg-query -l ${I} &> /dev/null ||
+            { echo "$ sudo apt-get install ${I}" && RC=1; }
+    done
+
+    # npm managed packages
+    #
+    npm -g ls | grep -q markdown-to-html ||
+        { echo "$ sudo npm install makrdown-to-html" && RC=1; }
+    
+    return $RC
+}
+
+check-nginx() {
+
+    local RC=0
+    local AVAIL_PATH=/etc/nginx/sites-available/frr.conf
+    local ENABLED_PATH=/etc/nginx/sites-enabled/frr.conf
+
+    cmp -s nginx/frr.conf ${AVAIL_PATH} ||
+        { echo "$ sudo cp nginx/frr.conf ${AVAIL_PATH}" && RC=1; }
+
+    [ "$(readlink -f ${ENABLED_PATH})" == "${AVAIL_PATH}" ] ||
+        { echo "$ sudo ln -s ${AVAIL_PATH}  ${ENABLED_PATH}" && RC=1; }
+
+    local PID=$(pidof -s nginx) ||
+        { echo "ngnix not running" && echo "$ sudo service restart nginx" && return 1; }
+
+    [ "/proc/${PID}/stat" -nt "${AVAIL_PATH}" ] ||        
+            { echo "ngnix config newer than process" &&
+              echo "$ sudo service restart nginx" && RC=1; }
+
+    return $RC
+}
+
+check-ssl() {
+    local RC=0
+
+    for I in org com net; do
+        wget --quiet --spider https://frrouting.$I ||
+            { echo "ssl cert not correct for frrouting.$I" && RC=1; }
+    done
+
+    return $RC
+}
+
+check-group() {
+    local RC=0
+
+    grep -q "^frr-web:" /etc/group ||
+        { echo "$ sudo addgroup frr-web" && RC=1; }
+
+    groups | grep -q "\bfrr-web\b" ||
+        { echo "$ sudo addgroup ${USER} frr-web" && RC=1; }
+
+    [ $(find . -not -group frr-web -not -path "./.git/*" -print | wc -l) -eq 0 ] ||
+        { echo "$ chgrp -R frr-web ." && RC=1; }
+
+    return $RC
+}
+
+#-----------------------------------------------------------------------------------------
+
+echo
+check-pkgs   || usage "Install missing packages with commands above"
+check-nginx  || usage "Correct nginx configuration with commands above"
+check-ssl    || usage "Correct SSL certificate installation"
+check-group  || usage "Correct administrative group issues with the commands above"
+
+exit 0
