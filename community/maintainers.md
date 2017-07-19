@@ -1,6 +1,6 @@
 # Maintainers
 
-FRR maintainers have commit access to the [FRR git repositories](https://github.com/frrouting).  This list is also avilable on [online](https://github.com/orgs/frrouting/teams/maintainers).
+FRR maintainers have commit access to the [FRR git repositories](https://github.com/frrouting).  This list is also available on [online](https://github.com/orgs/frrouting/teams/maintainers).
 
 - Christian Franke - [@cfra](https://github.com/cfra)
 - Donald Sharp (Owner) - [@donaldsharp](https://github.com/donaldsharp)
@@ -14,4 +14,15 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 
 # Technical Steering Committee
 
-Elections for the [Technical Steering Committee](tsc.html) are pending.
+[Technical Steering Committee](tsc.html) Members are responsible for technical oversight of FRRouting Project.
+
+The current members of the TSC are:
+
+- Lou Berger - [@louberger](https://github.com/louberger)
+- Philippe Guibert - [@pguibert6WIND](https://github.com/pguibert6WIND)
+- David Lamparter - [@eqvinox](https://github.com/eqvinox)
+- Donald Sharp - [@donaldsharp](https://github.com/donaldsharp)
+- Russ White - [@riw777](https://github.com/riw777)
+- Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
+
+The last (initial election) was held in May 2017. The next regular election for TSC members will be held in October 2017
