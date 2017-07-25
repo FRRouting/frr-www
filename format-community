@@ -35,7 +35,6 @@ for I in community/*.md; do
     cat templates/header.html >  $F
     markdown $I               >> $F
     cat templates/footer.html >> $F
-    chgrp frr-web $F
 done
 
 exit 0

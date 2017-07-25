@@ -53,10 +53,11 @@ git repository stylizing it along the way.  You are still responsible for the
 ### Community Documents
 
 These are all written in markdown because it's both easy and correctly formated
-when viewed in github.  For web presentation, they converted to HTML with
-`format-community`.  Put any community markdown documents in  GIT/community,
-and then run the script and they will be stylized with the results in
-GIT/www/community where they are rendered when viewing the website.
+ when viewed in github.  For web presentation, they converted to HTML with
+ `format-community`.  Put any community markdown documents in  GIT/community, 
+git-pull on the web server, and run the script.  At this point, they will be 
+stylized with the results in GIT/www/community where they are rendered when 
+viewing the website.
 
 ## Logos and Icons
 
@@ -106,6 +107,8 @@ $ sudo addgroup frr-web
 $ sudo addgroup ${USER} frr-web
 $ sudo chgrp -R /var/www/frr-web
 $ sudo chmod g+s /var/www/frr-web
+$ sudo chmod g+s /var/www/frr-web/www/community
+$ sudo chmod g+s /var/www/frr-web/www/user-guide
 ```
 
 ## Install configuration files
