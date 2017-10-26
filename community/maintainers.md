@@ -19,6 +19,7 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 - Russ White - [@riw777](https://github.com/riw777)
 - Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
 - Quentin Young - [@qlyoung](https://github.com/qlyoung)
+- Rafael Zalamena - [@rzalamena](https://github.com/rzalamena)
 
 # Technical Steering Committee
 
