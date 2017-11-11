@@ -35,6 +35,18 @@ for I in community/*.md; do
     cat templates/header.html >  $F
     markdown $I               >> $F
     cat templates/footer.html >> $F
+    # Add some border spaceing to tables
+    sed -i 's/<table>/<table style="border-collapse: separate; border-spacing: 10px;">/g' $F
+done
+# Now format subdirectories
+for I in community/*/*.md; do
+    F="www/community/$(basename $(dirname ${I}))/$(basename ${I} .md).html"
+    echo "converting ... $I"
+    install -D templates/header.html $F
+    markdown $I                   >> $F
+    cat templates/footer.html     >> $F
+    # Add some border spaceing to tables
+    sed -i 's/<table>/<table style="border-collapse: separate; border-spacing: 10px;">/g' $F
 done
 
 exit 0
