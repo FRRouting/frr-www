@@ -87,7 +87,7 @@ $ sudo apt-get install git
 $ sudo apt-get install nginx
 $ sudo apt-get install nodejs-legacy
 $ sudo apt-get install npm
-$ sudo npm install markdown-to-html
+$ sudo npm install -g markdown-to-html
 ```
 
 ### Clone this repository
@@ -105,10 +105,10 @@ administration of the site.
 ```
 $ sudo addgroup frr-web
 $ sudo addgroup ${USER} frr-web
-$ sudo chgrp -R /var/www/frr-web
-$ sudo chmod g+s /var/www/frr-web
-$ sudo chmod g+s /var/www/frr-web/www/community
-$ sudo chmod g+s /var/www/frr-web/www/user-guide
+$ sudo chgrp -R frr-web /var/www/frr-www
+$ sudo chmod g+s /var/www/frr-www
+$ sudo chmod g+s /var/www/frr-www/www/community
+$ sudo chmod g+s /var/www/frr-www/www/user-guide
 ```
 
 ## Install configuration files
@@ -117,8 +117,8 @@ $ sudo chmod g+s /var/www/frr-web/www/user-guide
 
 ```
 $ cd /var/www/frr-www
-$ sudo cp ngnix/frr.conf /etc/ngnix/sites-available/frr.conf
-$ sudo ln -s /etc/ngnix/sites-available/frr.conf /etc/ngnix/sites-enabled/frr.conf
+$ sudo cp nginx/frr.conf /etc/nginx/sites-available/frr.conf
+$ sudo ln -s /etc/nginx/sites-available/frr.conf /etc/nginx/sites-enabled/frr.conf
 $ sudo mkdir /etc/nginx/ssl
 $ sudo cp nginx/frrouting.ssl.tar.gpg /etc/nginx/ssl
 $ cd /etc/nginx/ssl
