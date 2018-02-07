@@ -3,7 +3,8 @@
 This web site uses a pretty simple web server and (mostly) relies on a single
 static web page, pulling in CSS, icons/logos, and other HTML as required.
 
-The main components of the directory tree consist of 
+The main components of the directory tree consist of
+```
     www       - this is the root of the web site, everything is served from here
     etc       - configuration files for the web server
     community - markdown files for simply formatted included content
@@ -11,6 +12,7 @@ The main components of the directory tree consist of
     logos     - the FRRouting logos
     build     - bash script that checks installation and generates
                 community and user-guide content
+```
 
 ## Rendered Site Structure (GIT/www)
 
