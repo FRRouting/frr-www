@@ -18,7 +18,7 @@ usage() {
     echo
     echo "usage: $0 <path-to-frr-build-tree>"
     echo "       <path-to-frr-build-tree> points to a project source tree in which the docs have"
-    echo "       been build using \"make html\"."
+    echo "       been build using \"make html\" and \"make developer-html\"."
     echo
     exit 1
 }
@@ -35,10 +35,10 @@ USR_SRC_DIR=$1/doc/user/_build/html
 [ -d $1/zebra ] ||
     usage "\"$1\" does not look like an frr source/build directory"
 if [ ! -d $USR_SRC_DIR ] || [ ! -f $USR_SRC_DIR/index.html ]; then
-    usage "Does not look like you've built frr user docs in \"$1/doc/\".  Try \"make FRR.html\""
+    usage "Does not look like you've built frr user docs in \"$1/doc/\".  Try \"make html\" in the doc directory."
 fi
 if [ ! -d $DEV_SRC_DIR ] || [ ! -f $DEV_SRC_DIR/index.html ]; then
-    usage "Does not look like you've built frr dev docs in \"$1/doc/\".  Try \"make developer.html\""
+    usage "Does not look like you've built frr dev docs in \"$1/doc/\".  Try \"make developer-html\" in the doc directory."
 fi
 
 # Prep the destination directory
