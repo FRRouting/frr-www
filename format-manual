@@ -18,12 +18,15 @@ usage() {
     echo
     echo "usage: $0 <path-to-frr-build-tree>"
     echo "       <path-to-frr-build-tree> points to a project source tree in which the docs have"
-    echo "       been build using \"make html\"."
+    echo "       been build using \"make html\" and \"make developer-html\"."
     echo
     exit 1
 }
 
 #-------------------------------------------------------------------------------
+
+DEV_SRC_DIR=$1/doc/developer/_build/html
+USR_SRC_DIR=$1/doc/user/_build/html
 
 # Sanity check the source directory
 #
@@ -31,35 +34,60 @@ usage() {
     usage "Expecting a pointer to a build tree"
 [ -d $1/zebra ] ||
     usage "\"$1\" does not look like an frr source/build directory"
-
-SRC_DIR=$1/doc/frr.html
-[ -d $SRC_DIR ] ||
-    usage "Does not look like you've built frr docs in \"$1\".  Try \"make html\""
-
-SRC_DIR=$1/doc/frr.html
-[ -f $SRC_DIR/index.html ] ||
-    usage "Does not look like you've built frr docs in \"$1\".  Try \"make html\""
+if [ ! -d $USR_SRC_DIR ] || [ ! -f $USR_SRC_DIR/index.html ]; then
+    usage "Does not look like you've built frr user docs in \"$1/doc/\".  Try \"make html\" in the doc directory."
+fi
+if [ ! -d $DEV_SRC_DIR ] || [ ! -f $DEV_SRC_DIR/index.html ]; then
+    usage "Does not look like you've built frr dev docs in \"$1/doc/\".  Try \"make developer-html\" in the doc directory."
+fi
 
 # Prep the destination directory
-DST_DIR=www/user-guide
-rm -rf $DST_DIR/*
+USR_DST_DIR=./www/user-guide
+DEV_DST_DIR=./www/dev-guide
+rm -rf $(pwd)/$USR_DST_DIR/*
+rm -rf $(pwd)/$DEV_DST_DIR/*
 
 #-------------------------------------------------------------------------------
 #
 # Pull in the manual
 #
-for I in $SRC_DIR/*
+
+for I in $DEV_SRC_DIR/*
 do
-    F=$DST_DIR/$(basename $I)
+    F=$DEV_DST_DIR/$(basename $I)
     case $F in
 	*.html)  echo "styling ... $F"
-		 touch $F
-		 cat templates/header.html >> $F
-		 sed -e '/^<\/style>$/ r css-links' $I >> $F
-		 cat templates/footer.html >> $F
-		 ;;
+		 # This section may be used for style transformations if
+		 # needed, but it is preferred to do this using Sphinx's
+		 # builtin theme customization facilities
+
+		 #touch $F
+		 #cat templates/header.html >> $F
+		 #sed -e '/^<\/style>$/ r css-links' $I >> $F
+		 #cat templates/footer.html >> $F
+		 ;&
 	*)       echo "copying ... $F"
-		 cp $I $F
+		 cp -r $I $F
+		 ;;
+    esac
+done
+
+for I in $USR_SRC_DIR/*
+do
+    F=$USR_DST_DIR/$(basename $I)
+    case $F in
+	*.html)  echo "styling ... $F"
+		 # This section may be used for style transformations if
+		 # needed, but it is preferred to do this using Sphinx's
+		 # builtin theme customization facilities
+
+		 #touch $F
+		 #cat templates/header.html >> $F
+		 #sed -e '/^<\/style>$/ r css-links' $I >> $F
+		 #cat templates/footer.html >> $F
+		 ;&
+	*)       echo "copying ... $F"
+		 cp -r $I $F
 		 ;;
     esac
 done
