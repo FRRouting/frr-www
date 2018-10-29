@@ -20,6 +20,9 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 - Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
 - Quentin Young - [@qlyoung](https://github.com/qlyoung)
 - Rafael Zalamena - [@rzalamena](https://github.com/rzalamena)
+- Daniel Preusser - [@fOo](https://github.com/f0o)
+- Paul Ziemba - [@paulzlabn](https://github.com/paulzlabn)
+- Pascal Mathis - [@ppmathis](https://github.com/ppmathis)
 
 # Technical Steering Committee
 
@@ -29,9 +32,9 @@ The current members of the TSC are:
 
 - Philippe Guibert - [@pguibert6WIND](https://github.com/pguibert6WIND)
 - Donald Sharp - [@donaldsharp](https://github.com/donaldsharp)
-- Renato Westphal - [rwestphal](https://github.com/rwestphal)
+- David Lamparter - [eqvinox](https://github.com/eqvinox)
 - Russ White - [@riw777](https://github.com/riw777)
 - Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
 - Quentin Young - [@qlyoung](https://github.com/qlyoung)
 
-The last (initial) election was held in May 2017. The next regular election for TSC members will be held in October 2017
+The last election was held in Oct 2018. The next regular election for TSC members will be held in October 2019
