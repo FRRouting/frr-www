@@ -11,9 +11,12 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 - Philippe Guibert - [@pguibert6WIND](https://github.com/pguibert6WIND)
 - Vincent Jardin - [@vjardin6WIND](https://github.com/vjardin6WIND)
 - David Lamparter - [@eqvinox](https://github.com/eqvinox)
+- Pascal Mathis - [@ppmathis](https://github.com/ppmathis)
 - JR Rivers - [@jrrivers](https://github.com/jrrivers)
 - Donnie Savage - [@diivious](https://github.com/diivious)
 - Donald Sharp - [@donaldsharp](https://github.com/donaldsharp)
+- Sri Mohana Singamsetty [@srimohans](https://github.com/srimohans)
+- Mark Stapp - [@mjstapp](https://github.com/mjstapp)
 - Daniel Walton [@dwalton76](https://github.com/dwalton76)
 - Renato Westphal - [@rwestphal](https://github.com/rwestphal)
 - Russ White - [@riw777](https://github.com/riw777)
@@ -22,7 +25,6 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 - Rafael Zalamena - [@rzalamena](https://github.com/rzalamena)
 - Daniel Preusser - [@fOo](https://github.com/f0o)
 - Paul Ziemba - [@paulzlabn](https://github.com/paulzlabn)
-- Pascal Mathis - [@ppmathis](https://github.com/ppmathis)
 
 # Technical Steering Committee
 
