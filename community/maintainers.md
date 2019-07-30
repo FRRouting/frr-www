@@ -2,6 +2,7 @@
 
 FRR maintainers have commit access to the [FRR git repositories](https://github.com/frrouting).  This list is also available on [online](https://github.com/orgs/frrouting/teams/maintainers).
 
+- Donatas Abraitis - [@ton31337](https://github.com/ton31337)
 - Jafar Al-Gharaibeh - [@jafarl](https://github.com/jafaral)
 - Lou Berger - [@louberger](https://github.com/louberger)
 - Olivier Dugeon - [@odd22](https://github.com/odd22)
