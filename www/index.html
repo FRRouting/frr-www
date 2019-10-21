@@ -1,447 +1,674 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>FRRouting</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
-
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
-
-        <link rel="stylesheet" href="/static/css/styles.css">
-
-    </head>
-    <body class="">
-        <!--[if lte IE 9]>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.2.0">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>FRRouting</title>
+  <meta name="description" content="">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/x-icon" href=
+  "/static/img/favicon.ico">
+  <link href=
+  "https://fonts.googleapis.com/css?family=Montserrat:300,400,500"
+  rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="">
+  <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
-        <script>
+  <script>
           console.log('This is not a preview.')
-        </script>
-
-        <nav class="m-navigation">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="navigation-group">
-                            <a class="navigation-logo" href="/"><img src="/static/img/logo.png" alt="FRROUTING" draggable="false"></a>
-                            <img src="/static/img/logo-linux-foundation.png" class="navigation-logos-right" alt="Linux Foundation Collaborative Projects" draggable="false">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <main id="main" role="main">
-            <header class="m-masthead">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="masthead_inner">
-                                <h1 class="masthead__title">What’s in your router?</h1>
-                                <p class="masthead__slogan">FRRouting (FRR) is an IP routing protocol suite for Linux and Unix platforms which<br> includes protocol daemons for BGP, IS-IS, LDP, OSPF, PIM, and RIP. </p>
-                                <p class="masthead__slogan">FRR’s seamless integration with the native Linux/Unix IP networking stacks<br> makes it applicable to a wide variety of use cases including connecting<br> hosts/VMs/containers to the network, advertising network services, LAN<br> switching and routing, Internet access routers, and Internet peering.</p>
-                                <p class="masthead__slogan">FRR has its roots in the Quagga project. In fact, it was started by many<br> long-time Quagga developers who combined their efforts to improve on<br> Quagga's well-established foundation in order to create the best routing<br> protocol stack available. We invite you to participate in the FRRouting<br> community and help shape the future of networking.</p>
-                                <p class="masthead__slogan">Join the ranks of network architects using FRR for ISPs, SaaS infrastructure,<br> web 2.0 businesses, hyperscale services, and Fortune 500 private clouds.</p>
-                                <a href="#downloads" class="m-button m-button-border m-button-white" data-sec-id="#downloads">Download</a>
-                                <a href="#participate" class="m-button m-button-orange" data-sec-id="#participate">Participate</a>
-                                <img src="/static/img/frr-line-image.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <section class="narrow-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 class="headline">News</h2>
-                        </div>
-                        <!-- The news section can be arranged in columns. Each post belongs
+  </script>
+  <nav class="m-navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="navigation-group"><a class="navigation-logo"
+          href="/"><img src="/static/img/logo.png" alt="FRROUTING"
+          draggable="false"></a> <img src=
+          "/static/img/logo-linux-foundation.png" class=
+          "navigation-logos-right" alt=
+          "Linux Foundation Collaborative Projects" draggable=
+          "false"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main id="main" role="main">
+    <header class="m-masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="masthead_inner">
+            <h1 class="masthead__title">What’s in your router?</h1>
+            <p class="masthead__slogan">FRRouting (FRR) is an IP
+            routing protocol suite for Linux and Unix platforms
+            which<br>
+            includes protocol daemons for BGP, IS-IS, LDP, OSPF,
+            PIM, and RIP.</p>
+            <p class="masthead__slogan">FRR’s seamless integration
+            with the native Linux/Unix IP networking stacks<br>
+            makes it applicable to a wide variety of use cases
+            including connecting<br>
+            hosts/VMs/containers to the network, advertising
+            network services, LAN<br>
+            switching and routing, Internet access routers, and
+            Internet peering.</p>
+            <p class="masthead__slogan">FRR has its roots in the
+            Quagga project. In fact, it was started by many<br>
+            long-time Quagga developers who combined their efforts
+            to improve on<br>
+            Quagga's well-established foundation in order to create
+            the best routing<br>
+            protocol stack available. We invite you to participate
+            in the FRRouting<br>
+            community and help shape the future of networking.</p>
+            <p class="masthead__slogan">Join the ranks of network
+            architects using FRR for ISPs, SaaS infrastructure,<br>
+            web 2.0 businesses, hyperscale services, and Fortune
+            500 private clouds.</p><a href="#downloads" class=
+            "m-button m-button-border m-button-white" data-sec-id=
+            "#downloads">Download</a> <a href="#participate" class=
+            "m-button m-button-orange" data-sec-id=
+            "#participate">Participate</a> <img src=
+            "/static/img/frr-line-image.png"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="narrow-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="headline">News</h2>
+          </div>
+          <!-- The news section can be arranged in columns. Each post belongs
                         in its own DIV. For a single column layout, use class="col-md-12";
                         for a 2 column layout, use class="col-md-6" for each div;
                         for 3 column layout, use class="col-md-4" for each div. -->
-                        <div class="col-md-12">
-			  <div class="media-content">
-                           <h4>7.2 Release of FRR</h4>
-                           <p>The FRRouting community is pleased to announce that a new version of FRR is available for
-                             <a href="https://github.com/FRRouting/frr/releases/tag/frr-7.2" target="_blank">download</a>.
-                           </p>
-                           <time>Oct 15, 2019</time><a href="/community/7.2-launch.html">Read more</a>
-                          </div>
-			  <div class="media-content">
-                           <h4>7.1 Release of FRR</h4>
-                           <p>The FRRouting community is pleased to announce that a new version of FRR is available for
-                             <a href="https://github.com/FRRouting/frr/releases/tag/frr-7.1" target="_blank">download</a>.
-                           </p>
-                           <time>Jul 30, 2019</time><a href="/community/7.1-launch.html">Read more</a>
-                          </div>
-                         <div class="media-content">
-                           <h4>7.0 Release of FRR</h4>
-                           <p>The FRRouting community is proud to announce that a new version of FRR is available for
-                             <a href="https://github.com/FRRouting/frr/releases/tag/frr-7.0" target="_blank">download</a>.
-                             This release adds a Yang/NetConf, BGP Enhancements, OpenFabric and numerous bug fixes.
-                           </p>
-                           <time>Mar 13, 2019</time><a href="/community/7.0-launch.html">Read more</a>
-                         </div>
-			  <div class="media-content">
-                           <h4>6.0 Release of FRR</h4>
-                           <p>The FRRouting community is proud to announce that a new version of FRR is available for
-                             <a href="https://github.com/FRRouting/frr/releases/tag/frr-6.0" target="_blank">download</a>.
-                             This release adds two new daemon for BFD and static route handling, ISIS support for
-                             dst-src routing per draft-ietf-isis-ipv6-dst-src-routing and numerous bug fixes.
-                           </p>
-                           <time>Oct 17, 2018</time><a href="/community/6.0-launch.html">Read more</a>
-                         </div>
-                         <div class="media-content">
-                           <h4>5.0 Release of FRR</h4>
-                           <p>The FRRouting community is proud to announce that a new version of FRR is available for
-                             <a href="https://github.com/FRRouting/frr/releases/tag/frr-5.0" target="_blank">download</a>.
-                             This release adds a new daemon for Policy Based Routing, improved support for Linux network namespaces,
-                             improved Docker support, and a variety of other bug fixes and performance improvements.
-                           </p>
-                           <time>Aug 15, 2018</time><a href="/community/5.0-launch.html">Read more</a>
-                         </div>
-                         <div class="media-content">
-			    <h4>4.0 Release of FRR</h4>
-			    <p>The FRRouting community is proud to announce that a new version of FRR is available for
-			      <a href="https://github.com/FRRouting/frr/releases/tag/frr-4.0" target="_blank">download</a>.
-			      This release brings VRF enhancements to Zebra/PIM/OSPFv2, BGP EVPN support, the BABEL routing protocol
-			      as well as an experimental version of EIGRP.  For a full list of changes from the 3.0 release
-			      see the <a href="https://github.com/FRRouting/frr/wiki/Frr-3.0-→-4.0" target="_blak">changes</a> wiki.
-			    </p>
-			    <time>Mar 22, 2018</time><a href="/community/4.0-launch.html">Read more</a>
-			  </div>
-			  <div class="media-content">
-			    <h4>3.0 Release of FRR</h4>
-			    <p>The FRRouting community is proud to announce that the second release of FRR is available for
-			      <a href="https://github.com/FRRouting/frr/releases/frr-3.0" target="_blank">download</a>.  The team has spent
-			      the last 5 months integrating code and developing enhancements towards making FRR the best open routing suite available.</p>
-			    <time>October 25, 2017</time><a href="/community/3.0-launch.html">Read more</a>
-			  </div>
-                            <div class="media-content">
-                                <h4>Welcoming FRRouting to The Linux Foundation</h4>
-                                <p>One of the most exciting parts of being in this industry over the past couple of decades has
-                                   been witnessing the transformative impact that open source software has had on IT in general and
-                                   specifically on networking. Contributions to various open source projects have fundamentally helped
-                                   bring the reliability and economics of web-scale IT to organizations of all sizes. I am happy to
-                                   report the community has taken yet another step forward with FRRouting.</p>
-                                <time>April 3, 2017</time><a
-                            href="https://www.linux.com/news/2017/4/welcoming-frrouting-linux-foundation" target="_blank">Read More</a>
-                            </div>
-                            <div class="media-content">
-                                <h4>Inaugural FRRouting Release Available for Download</h4>
-                                <p>The FRRouting contributors are proud to announce that the first release of FRR is available for 
-                                   <a href="https://github.com/FRRouting/frr/releases/tag/frr-2.0" target="_blank">download</a> with
-                                   pre-built packages being released over the next few weeks.  The team has spent the last ten months 
-                                   integrating code and developing enhancements towards making FRR the best open routing suite available.</p>
-                                <time>April 3, 2017</time><a
-                            href="/community/2.0-launch.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="downloads" class="narrow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 class="headline">Downloads</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <ul class="m-icon-list center-blocks">
-                            <li>
-                                <a class="m-icon icon-block" href="https://github.com/FRRouting/frr/releases" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-releases.png" draggable="false" alt=""></figure>
-                                    <h3>Releases</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="http://docs.frrouting.org/en/latest" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-user-guide.png" draggable="false" alt=""></figure>
-                                    <h3>User Guide</h3>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="participate" class="narrow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 class="headline">Participate</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <ul class="m-icon-list center-blocks">
-                            <li>
-                                <a class="m-icon icon-block" href="https://lists.frrouting.org/listinfo/dev" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-dev-email.png" draggable="false" alt=""></figure>
-                                    <h3>Dev Email</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://lists.frrouting.org/listinfo/frog" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-users-email.png" draggable="false" alt=""></figure>
-                                    <h3>Users Email</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://lists.frrouting.org/listinfo/announce" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-announce-email.png" draggable="false" alt=""></figure>
-                                    <h3>Announce<br> Email</h3>
-                                </a>
-                            </li>
-			    <li>
-			      <a class="m-icon icon-block" href="/community/security.html">
-				<figure><img src="/static/img/icons/icon-dev-email.png" draggable="false" alt=""></figure>
-                                    <h3>Security</h3>
-                            <li>
-                                <a class="m-icon icon-block" href="https://join.slack.com/t/frrouting/shared_invite/enQtNjM1MTkzMDQ0Mzg2LTAxZmQ5ODk0NTE1NjZmOWNkNmJkODc3YWZhOWE3NjQ1MzI2YWMzZmViNzVmYjBhYWNkNDYwMjVkOWMzMWZkYWM" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-slack.png" draggable="false" alt=""></figure>
-                                    <h3>Slack</h3>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="narrow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 class="headline">Develop</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <ul class="m-icon-list center-blocks">
-                            <li>
-                                <a class="m-icon icon-block" href="http://docs.frrouting.org/projects/dev-guide/en/latest/" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-developing-frr.png" draggable="false" alt=""></figure>
-                                    <h3>Developing<br> for FRR</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://github.com/FRRouting/frr" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-github.png" draggable="false" alt=""></figure>
-                                    <h3>Github</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://github.com/FRRouting/frr/issues" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-issue-tracking.png" draggable="false" alt=""></figure>
-                                    <h3>Issue Tracking</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://ci1.netdef.org/browse/FRR" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-continuous-integration.png" draggable="false" alt=""></figure>
-                                    <h3>Continuous<br> Integration</h3>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="testing" class="narrow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 class="headline">Testing</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <ul class="m-icon-list center-blocks">
-                            <li>
-                                <div class="m-icon icon-block">
-                                    <figure><img src="/static/img/icons/icon-rip.png" draggable="false" alt=""></figure>
-                                    <h3>RIP <a href="test-results/RIP_extended_results.pdf" target="_blank"><span>v4</span></a>&nbsp;&nbsp;<a href="test-results/RIPNG_extended_results.pdf" target="_blank"><span>v6</span></a></h3>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="m-icon icon-block">
-                                    <figure><img src="/static/img/icons/icon-ospf.png" draggable="false" alt=""></figure>
-                                    <h3>OSPF <a href="test-results/OSPF_extended_results.pdf" target="_blank"><span>v4</span></a>&nbsp;&nbsp;<a href="test-results/OSPFV3_extended_results.pdf" target="_blank"><span>v6</span></a></h3>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="m-icon icon-block">
-                                    <figure><img src="/static/img/icons/icon-isis.png" draggable="false" alt=""></figure>
-                                    <h3>ISIS <a href="test-results/ISIS_extended_results.pdf" target="_blank"><span>v4</span></a>&nbsp;&nbsp;<a href="test-results/ISISV6_extended_results.pdf" target="_blank"><span>v6</span></a></h3>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="m-icon icon-block">
-                                    <figure><img src="/static/img/icons/icon-bgp4.png" draggable="false" alt=""></figure>
-                                    <h3>BGP4 <a href="test-results/BGP4_extended_results.pdf" target="_blank"><span>v4</span></a>&nbsp;&nbsp;<a href="test-results/BGPPLUS_extended_results.pdf" target="_blank"><span>v6</span></a></h3>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="m-icon icon-block">
-                                    <figure><img src="/static/img/icons/icon-bgp4-alternate.png" draggable="false" alt=""></figure>
-                                    <h3>BGP4 (4 byte AS)<br class="hidden-sm"> <a href="test-results/BGP-AS4_extended_results.pdf" target="_blank"><span>v4</span></a>&nbsp;&nbsp;<a href="test-results/BGPPLUS-AS4_extended_results.pdf" target="_blank"><span>v6</span></a></h3>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="m-icon icon-block">
-                                    <figure><img src="/static/img/icons/icon-ldp.png" draggable="false" alt=""></figure>
-                                    <h3><a href="test-results/LDP_extended_results.pdf" target="_blank">LDP</a></h3>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="narrow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 class="headline">Community</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <ul class="m-icon-list center-blocks">
-                            <li>
-                                <a class="m-icon icon-block" href="/community/maintainers.html">
-                                    <figure><img src="/static/img/icons/icon-maintainers.png" draggable="false" alt=""></figure>
-                                    <h3>Maintainers</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="/community/tsc.html">
-                                    <figure><img src="/static/img/icons/icon-technical-steering.png" draggable="false" alt=""></figure>
-                                    <h3>Technical Steering<br> Committee</h3>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="/community/charter.html" target="_blank">
-                                    <figure><img src="/static/img/icons/icon-linux-foundation-charter.png" draggable="false" alt=""></figure>
-                                    <h3>Linux Foundation<br> Charter</h3>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="narrow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 class="headline">Contributors</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <ul id="contributors" class="m-icon-list center-blocks">
-                            <li>
-                                <a class="m-icon icon-block" href="http://www.128technology.com" target="_blank">
-                                    <figure><img src="/static/img/contributors/128-tech.jpg" draggable="false" alt="128 Technology"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="http://www.6wind.com" target="_blank">
-                                    <figure><img src="/static/img/contributors/6wind.jpg" draggable="false" alt="6wind"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://www.atcorp.com" target="_blank">
-                                    <figure><img src="/static/img/contributors/atc.jpg" draggable="false" alt="Architecture Technology Corporation"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="http://www.bigswitch.com/" target="_blank">
-                                    <figure><img src="/static/img/contributors/bigswitch.jpg" draggable="false" alt="big switch"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://www.bisdn.de/" target="_blank">
-                                    <figure><img src="/static/img/contributors/bisdn.jpg" draggable="false" alt="BISDN"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="http://www.cloudscale.ch/" target="_blank">
-                                    <figure><img src="/static/img/contributors/cloudscale.jpg" draggable="false" alt="cloudscale.ch"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="http://www.cumulusnetworks.com" target="_blank">
-                                    <figure><img src="/static/img/contributors/cumulus.png" draggable="false" alt="Cumulus Networks"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="http://isc.org" target="_blank">
-                                    <figure><img src="/static/img/contributors/isc.jpg" draggable="false" alt="Internet Systems Consortium"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="http://labn.net" target="_blank">
-                                    <figure><img src="/static/img/contributors/labn.jpg" draggable="false" alt="LabN Consulting"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://www.landitec.com/products/open-source-appliance-solutions/scope7-open-source-appliances/scope7-frrouting-appliances" target="_blank">
-                                    <figure><img src="/static/img/contributors/landitec.jpg" draggable="false" alt="Landitec"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://www.netdef.org" target="_blank">
-                                    <figure><img src="/static/img/contributors/netdef.jpg" draggable="false" alt="NetDef"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://www.opensourcerouting.org" target="_blank">
-                                    <figure><img src="/static/img/contributors/opensourcerouting.jpg" draggable="false" alt="OpenSourceRouting"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://www.orange.com" target="_blank">
-                                    <figure><img src="/static/img/contributors/orange-logo.jpg" draggable="false" alt="Orange UK"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://www.pluribusnetworks.com" target="_blank">
-                                    <figure><img src="/static/img/contributors/pluribusnetworks.png" draggable="false" alt="Pluribus Networks"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://vmware.com" target="_blank">
-                                    <figure><img src="/static/img/contributors/vmware.jpg" draggable="false" alt="VM Ware"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="http://voltanet.io" target="_blank">
-                                    <figure><img src="/static/img/contributors/volta.jpg" draggable="false" alt="Volta Networks"></figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="m-icon icon-block" href="https://xcloudnetworks.com" target="_blank">
-                                    <figure><img src="/static/img/contributors/xcloud.jpg" draggable="false" alt="XCloud Networks"></figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="footer-group">
-                            <p>&copy; 2017 FRRouting Project, a Linux Foundation Collaborative Project. All Rights Reserved unless explicitly granted under an open source license.<br> The Linux Foundation is a registered trademark of The Linux Foundation. Linux is a registered trademark of Linus Torvalds.<br> Please see our <a href="https://www.linuxfoundation.org/terms" target="_blank">terms of use</a>, <a href="https://www.linuxfoundation.org/trademark-usage" target="_blank">trademark usage</a> and <a href=" https://www.linuxfoundation.org/privacy" target="_blank">privacy policy</a></p>
-                            <p>Site by <a href="http://www.unomena.com" target="_blank">UNOMENA</a></p>
-                        </div>
-                    </div>
-                </div>
+          <div class="col-md-12">
+            <div class="media-content">
+              <h4>7.2 Release of FRR</h4>
+              <p>The FRRouting community is pleased to announce
+              that a new version of FRR is available for <a href=
+              "https://github.com/FRRouting/frr/releases/tag/frr-7.2"
+              target="_blank">download</a>.</p><time>Oct 15,
+              2019</time><a href="/community/7.2-launch.html">Read
+              more</a>
             </div>
-        </footer>
-
-    </body>
+            <div class="media-content">
+              <h4>7.1 Release of FRR</h4>
+              <p>The FRRouting community is pleased to announce
+              that a new version of FRR is available for <a href=
+              "https://github.com/FRRouting/frr/releases/tag/frr-7.1"
+              target="_blank">download</a>.</p><time>Jul 30,
+              2019</time><a href="/community/7.1-launch.html">Read
+              more</a>
+            </div>
+            <div class="media-content">
+              <h4>7.0 Release of FRR</h4>
+              <p>The FRRouting community is proud to announce that
+              a new version of FRR is available for <a href=
+              "https://github.com/FRRouting/frr/releases/tag/frr-7.0"
+              target="_blank">download</a>. This release adds a
+              Yang/NetConf, BGP Enhancements, OpenFabric and
+              numerous bug fixes.</p><time>Mar 13,
+              2019</time><a href="/community/7.0-launch.html">Read
+              more</a>
+            </div>
+            <div class="media-content">
+              <h4>6.0 Release of FRR</h4>
+              <p>The FRRouting community is proud to announce that
+              a new version of FRR is available for <a href=
+              "https://github.com/FRRouting/frr/releases/tag/frr-6.0"
+              target="_blank">download</a>. This release adds two
+              new daemon for BFD and static route handling, ISIS
+              support for dst-src routing per
+              draft-ietf-isis-ipv6-dst-src-routing and numerous bug
+              fixes.</p><time>Oct 17, 2018</time><a href=
+              "/community/6.0-launch.html">Read more</a>
+            </div>
+            <div class="media-content">
+              <h4>5.0 Release of FRR</h4>
+              <p>The FRRouting community is proud to announce that
+              a new version of FRR is available for <a href=
+              "https://github.com/FRRouting/frr/releases/tag/frr-5.0"
+              target="_blank">download</a>. This release adds a new
+              daemon for Policy Based Routing, improved support for
+              Linux network namespaces, improved Docker support,
+              and a variety of other bug fixes and performance
+              improvements.</p><time>Aug 15, 2018</time><a href=
+              "/community/5.0-launch.html">Read more</a>
+            </div>
+            <div class="media-content">
+              <h4>4.0 Release of FRR</h4>
+              <p>The FRRouting community is proud to announce that
+              a new version of FRR is available for <a href=
+              "https://github.com/FRRouting/frr/releases/tag/frr-4.0"
+              target="_blank">download</a>. This release brings VRF
+              enhancements to Zebra/PIM/OSPFv2, BGP EVPN support,
+              the BABEL routing protocol as well as an experimental
+              version of EIGRP. For a full list of changes from the
+              3.0 release see the <a href=
+              "https://github.com/FRRouting/frr/wiki/Frr-3.0-%E2%86%92-4.0"
+              target="_blak">changes</a> wiki.</p><time>Mar 22,
+              2018</time><a href="/community/4.0-launch.html">Read
+              more</a>
+            </div>
+            <div class="media-content">
+              <h4>3.0 Release of FRR</h4>
+              <p>The FRRouting community is proud to announce that
+              the second release of FRR is available for <a href=
+              "https://github.com/FRRouting/frr/releases/frr-3.0"
+              target="_blank">download</a>. The team has spent the
+              last 5 months integrating code and developing
+              enhancements towards making FRR the best open routing
+              suite available.</p><time>October 25,
+              2017</time><a href="/community/3.0-launch.html">Read
+              more</a>
+            </div>
+            <div class="media-content">
+              <h4>Welcoming FRRouting to The Linux Foundation</h4>
+              <p>One of the most exciting parts of being in this
+              industry over the past couple of decades has been
+              witnessing the transformative impact that open source
+              software has had on IT in general and specifically on
+              networking. Contributions to various open source
+              projects have fundamentally helped bring the
+              reliability and economics of web-scale IT to
+              organizations of all sizes. I am happy to report the
+              community has taken yet another step forward with
+              FRRouting.</p><time>April 3, 2017</time><a href=
+              "https://www.linux.com/news/2017/4/welcoming-frrouting-linux-foundation"
+              target="_blank">Read More</a>
+            </div>
+            <div class="media-content">
+              <h4>Inaugural FRRouting Release Available for
+              Download</h4>
+              <p>The FRRouting contributors are proud to announce
+              that the first release of FRR is available for
+              <a href=
+              "https://github.com/FRRouting/frr/releases/tag/frr-2.0"
+              target="_blank">download</a> with pre-built packages
+              being released over the next few weeks. The team has
+              spent the last ten months integrating code and
+              developing enhancements towards making FRR the best
+              open routing suite available.</p><time>April 3,
+              2017</time><a href="/community/2.0-launch.html">Read
+              More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="downloads" class="narrow">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="headline">Downloads</h2>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="m-icon-list center-blocks">
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://github.com/FRRouting/frr/releases" target=
+              "_blank">
+              <figure>
+                <img src="/static/img/icons/icon-releases.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Releases</h3></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "http://docs.frrouting.org/en/latest" target=
+              "_blank">
+              <figure>
+                <img src="/static/img/icons/icon-user-guide.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>User Guide</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="participate" class="narrow">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="headline">Participate</h2>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="m-icon-list center-blocks">
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://lists.frrouting.org/listinfo/dev" target=
+              "_blank">
+              <figure>
+                <img src="/static/img/icons/icon-dev-email.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Dev Email</h3></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://lists.frrouting.org/listinfo/frog" target=
+              "_blank">
+              <figure>
+                <img src="/static/img/icons/icon-users-email.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Users Email</h3></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://lists.frrouting.org/listinfo/announce"
+              target="_blank">
+              <figure>
+                <img src=
+                "/static/img/icons/icon-announce-email.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Announce<br>
+              Email</h3></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "/community/security.html">
+              <figure>
+                <img src="/static/img/icons/icon-dev-email.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Security</h3>
+              <div style="margin-left: 2em">
+                <figure>
+                  <img src="/static/img/icons/icon-slack.png"
+                  draggable="false" alt="">
+                </figure>
+                <h3>Slack</h3>
+              </div></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="narrow">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="headline">Develop</h2>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="m-icon-list center-blocks">
+            <li>
+              <a class="m-icon icon-block" href=
+              "http://docs.frrouting.org/projects/dev-guide/en/latest/"
+              target="_blank">
+              <figure>
+                <img src=
+                "/static/img/icons/icon-developing-frr.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Developing<br>
+              for FRR</h3></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://github.com/FRRouting/frr" target="_blank">
+              <figure>
+                <img src="/static/img/icons/icon-github.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Github</h3></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://github.com/FRRouting/frr/issues" target=
+              "_blank">
+              <figure>
+                <img src=
+                "/static/img/icons/icon-issue-tracking.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Issue Tracking</h3></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://ci1.netdef.org/browse/FRR" target="_blank">
+              <figure>
+                <img src=
+                "/static/img/icons/icon-continuous-integration.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Continuous<br>
+              Integration</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="testing" class="narrow">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="headline">Testing</h2>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="m-icon-list center-blocks">
+            <li>
+              <div class="m-icon icon-block">
+                <figure>
+                  <img src="/static/img/icons/icon-rip.png"
+                  draggable="false" alt="">
+                </figure>
+                <h3>RIP <a href=
+                "test-results/RIP_extended_results.pdf" target=
+                "_blank"><span>v4</span></a>&nbsp;&nbsp;<a href=
+                "test-results/RIPNG_extended_results.pdf" target=
+                "_blank"><span>v6</span></a></h3>
+              </div>
+            </li>
+            <li>
+              <div class="m-icon icon-block">
+                <figure>
+                  <img src="/static/img/icons/icon-ospf.png"
+                  draggable="false" alt="">
+                </figure>
+                <h3>OSPF <a href=
+                "test-results/OSPF_extended_results.pdf" target=
+                "_blank"><span>v4</span></a>&nbsp;&nbsp;<a href=
+                "test-results/OSPFV3_extended_results.pdf" target=
+                "_blank"><span>v6</span></a></h3>
+              </div>
+            </li>
+            <li>
+              <div class="m-icon icon-block">
+                <figure>
+                  <img src="/static/img/icons/icon-isis.png"
+                  draggable="false" alt="">
+                </figure>
+                <h3>ISIS <a href=
+                "test-results/ISIS_extended_results.pdf" target=
+                "_blank"><span>v4</span></a>&nbsp;&nbsp;<a href=
+                "test-results/ISISV6_extended_results.pdf" target=
+                "_blank"><span>v6</span></a></h3>
+              </div>
+            </li>
+            <li>
+              <div class="m-icon icon-block">
+                <figure>
+                  <img src="/static/img/icons/icon-bgp4.png"
+                  draggable="false" alt="">
+                </figure>
+                <h3>BGP4 <a href=
+                "test-results/BGP4_extended_results.pdf" target=
+                "_blank"><span>v4</span></a>&nbsp;&nbsp;<a href=
+                "test-results/BGPPLUS_extended_results.pdf" target=
+                "_blank"><span>v6</span></a></h3>
+              </div>
+            </li>
+            <li>
+              <div class="m-icon icon-block">
+                <figure>
+                  <img src=
+                  "/static/img/icons/icon-bgp4-alternate.png"
+                  draggable="false" alt="">
+                </figure>
+                <h3>BGP4 (4 byte AS)<br class="hidden-sm">
+                <a href="test-results/BGP-AS4_extended_results.pdf"
+                target=
+                "_blank"><span>v4</span></a>&nbsp;&nbsp;<a href=
+                "test-results/BGPPLUS-AS4_extended_results.pdf"
+                target="_blank"><span>v6</span></a></h3>
+              </div>
+            </li>
+            <li>
+              <div class="m-icon icon-block">
+                <figure>
+                  <img src="/static/img/icons/icon-ldp.png"
+                  draggable="false" alt="">
+                </figure>
+                <h3><a href="test-results/LDP_extended_results.pdf"
+                target="_blank">LDP</a></h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="narrow">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="headline">Community</h2>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="m-icon-list center-blocks">
+            <li>
+              <a class="m-icon icon-block" href=
+              "/community/maintainers.html">
+              <figure>
+                <img src="/static/img/icons/icon-maintainers.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Maintainers</h3></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "/community/tsc.html">
+              <figure>
+                <img src=
+                "/static/img/icons/icon-technical-steering.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Technical Steering<br>
+              Committee</h3></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "/community/charter.html" target="_blank">
+              <figure>
+                <img src=
+                "/static/img/icons/icon-linux-foundation-charter.png"
+                draggable="false" alt="">
+              </figure>
+              <h3>Linux Foundation<br>
+              Charter</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="narrow">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="headline">Contributors</h2>
+          </div>
+        </div>
+        <div class="row">
+          <ul id="contributors" class="m-icon-list center-blocks">
+            <li>
+              <a class="m-icon icon-block" href=
+              "http://www.128technology.com" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/128-tech.jpg"
+                draggable="false" alt="128 Technology">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "http://www.6wind.com" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/6wind.jpg"
+                draggable="false" alt="6wind">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://www.atcorp.com" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/atc.jpg"
+                draggable="false" alt=
+                "Architecture Technology Corporation">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "http://www.bigswitch.com/" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/bigswitch.jpg"
+                draggable="false" alt="big switch">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://www.bisdn.de/" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/bisdn.jpg"
+                draggable="false" alt="BISDN">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "http://www.cloudscale.ch/" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/cloudscale.jpg"
+                draggable="false" alt="cloudscale.ch">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "http://www.cumulusnetworks.com" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/cumulus.png"
+                draggable="false" alt="Cumulus Networks">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href="http://isc.org"
+              target="_blank">
+              <figure>
+                <img src="/static/img/contributors/isc.jpg"
+                draggable="false" alt=
+                "Internet Systems Consortium">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href="http://labn.net"
+              target="_blank">
+              <figure>
+                <img src="/static/img/contributors/labn.jpg"
+                draggable="false" alt="LabN Consulting">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://www.landitec.com/products/open-source-appliance-solutions/scope7-open-source-appliances/scope7-frrouting-appliances"
+              target="_blank">
+              <figure>
+                <img src="/static/img/contributors/landitec.jpg"
+                draggable="false" alt="Landitec">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://www.netdef.org" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/netdef.jpg"
+                draggable="false" alt="NetDef">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://www.opensourcerouting.org" target="_blank">
+              <figure>
+                <img src=
+                "/static/img/contributors/opensourcerouting.jpg"
+                draggable="false" alt="OpenSourceRouting">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://www.orange.com" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/orange-logo.jpg"
+                draggable="false" alt="Orange UK">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://www.pluribusnetworks.com" target="_blank">
+              <figure>
+                <img src=
+                "/static/img/contributors/pluribusnetworks.png"
+                draggable="false" alt="Pluribus Networks">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://vmware.com" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/vmware.jpg"
+                draggable="false" alt="VM Ware">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "http://voltanet.io" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/volta.jpg"
+                draggable="false" alt="Volta Networks">
+              </figure></a>
+            </li>
+            <li>
+              <a class="m-icon icon-block" href=
+              "https://xcloudnetworks.com" target="_blank">
+              <figure>
+                <img src="/static/img/contributors/xcloud.jpg"
+                draggable="false" alt="XCloud Networks">
+              </figure></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-group">
+            <p>© 2017 FRRouting Project, a Linux Foundation
+            Collaborative Project. All Rights Reserved unless
+            explicitly granted under an open source license.<br>
+            The Linux Foundation is a registered trademark of The
+            Linux Foundation. Linux is a registered trademark of
+            Linus Torvalds.<br>
+            Please see our <a href=
+            "https://www.linuxfoundation.org/terms" target=
+            "_blank">terms of use</a>, <a href=
+            "https://www.linuxfoundation.org/trademark-usage"
+            target="_blank">trademark usage</a> and <a href=
+            "https://www.linuxfoundation.org/privacy" target=
+            "_blank">privacy policy</a></p>
+            <p>Site by <a href="http://www.unomena.com" target=
+            "_blank">UNOMENA</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
