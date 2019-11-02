@@ -28,11 +28,11 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 
 The current members of the TSC are:
 
-- Philippe Guibert - [@pguibert6WIND](https://github.com/pguibert6WIND)
 - Donald Sharp - [@donaldsharp](https://github.com/donaldsharp)
-- David Lamparter - [eqvinox](https://github.com/eqvinox)
 - Russ White - [@riw777](https://github.com/riw777)
 - Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
 - Quentin Young - [@qlyoung](https://github.com/qlyoung)
+- Lou Berger - [@louberger](https://github.com/louberger)
+- Sri Mohana Singamsetty [@srimohans](https://github.com/srimohans)
 
-The last election was held in Oct 2018. The next regular election for TSC members will be held in October 2019
+The last election was held in Oct 2019. The next regular election for TSC members will be held in October 2020.
