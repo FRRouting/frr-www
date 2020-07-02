@@ -22,6 +22,7 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 - Daniel Preusser - [@fOo](https://github.com/f0o)
 - Paul Ziemba - [@paulzlabn](https://github.com/paulzlabn)
 - Stephen Worley - [@sworleys](https://github.com/sworleys)
+- Santosh P K - [@spantik](https://github.com/spantik)
 
 # Technical Steering Committee
 
