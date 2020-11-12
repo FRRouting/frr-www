@@ -3,7 +3,7 @@
 FRR maintainers have commit access to the [FRR git repositories](https://github.com/frrouting).  This list is also available on [online](https://github.com/orgs/frrouting/teams/maintainers).
 
 - Donatas Abraitis - [@ton31337](https://github.com/ton31337)
-- Jafar Al-Gharaibeh - [@jafarl](https://github.com/jafaral)
+- Jafar Al-Gharaibeh - [@jafaral](https://github.com/jafaral)
 - Lou Berger - [@louberger](https://github.com/louberger)
 - Olivier Dugeon - [@odd22](https://github.com/odd22)
 - Christian Franke - [@cfra](https://github.com/cfra)
@@ -30,11 +30,11 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 
 The current members of the TSC are:
 
+- Lou Berger - [@louberger](https://github.com/louberger)
 - Donald Sharp - [@donaldsharp](https://github.com/donaldsharp)
+- Mark Stapp - [@mjstapp](https://github.com/mjstapp)
 - Russ White - [@riw777](https://github.com/riw777)
 - Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
 - Quentin Young - [@qlyoung](https://github.com/qlyoung)
-- Lou Berger - [@louberger](https://github.com/louberger)
-- Sri Mohana Singamsetty [@srimohans](https://github.com/srimohans)
 
-The last election was held in Oct 2019. The next regular election for TSC members will be held in October 2020.
+The last election was held in Oct 2020. The next regular election for TSC members will be held in October 2021.
