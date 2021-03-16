@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet href="{{ .Site.Params.localLinks.css }}/style.css">
+	{{- block "scripts" . }}{{ end }}
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+	<title>{{- block "title" . -}}{{ or .Title .File.BaseFileName |title }} &ndash; {{ .Site.Title }}{{ end }}</title>
+</head><body>
+	{{ block "header" . }}
+	<header>
+		<div id="top-icons">
+			<span id=home-button><img src="{{ .Site.Params.localLinks.img }}/frrouting.svg"></span>
+			<span id=linux-foundation><img src="{{ .Site.Params.localLinks.img }}/logo-linux-foundation.png"></span>
+		</div><hr>
+		<nav><ul>
+			<li><a href="{{ .Site.Params.localLinks.home }}">Home</a></li>
+			<li><a href="{{ .Site.Params.localLinks.releases }}">Releases</a></li>
+			<li><a href="{{ .Site.Params.localLinks.community }}">Community</a></li>
+			<li><a href="{{ .Site.Params.localLinks.doc }}">Documentation</a></li>
+			<li><a href="{{ .Site.Params.extLinks.ci }}">CI</a></li>
+		</ul></nav>
+
+	</header>
+	{{ end }}
+	{{ block "main" . }}{{ end }}
+	{{- block "releases" . }}
+	{{- end }}
+    {{ block "footer" . }}
+	<footer>{{- partial  "copyright.tmpl" }}</footer>
+	{{- end }}
+</body></html>

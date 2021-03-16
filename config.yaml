@@ -1,0 +1,37 @@
+# URL
+baseURL: "https://frrouting.org/"
+
+# Git versioning
+enableGitInfo: true
+
+# HTML files output to www/
+publishDir: "www"
+
+# Make permalinks to releases look pretty
+permalinks:
+  releases: /:year/:month/:filename/
+
+# Append to <title> in most spots
+title: "FRRouting"
+
+# <html lang="...">
+languageCode: "en-US"
+
+params:
+  # Off-site links, aggregated here in case they need to be changed later
+  extLinks:
+    slack: "https://join.slack.com/t/frrouting/shared_invite/enQtNjM1MTkzMDQ0Mzg2LTAxZmQ5ODk0NTE1NjZmOWNkNmJkODc3YWZhOWE3NjQ1MzI2YWMzZmViNzVmYjBhYWNkNDYwMjVkOWMzMWZkYWM"
+    github: "https://github.com/FRRouting/frr"
+    ci: "https://ci1.netdef.org/browse/FRR"
+    mailList: "https://lists.frrouting.org"
+    userDoc: "http://docs.frrouting.org/en/latest/"
+    devDoc: "http://docs.frrouting.org/projects/dev-guide/en/latest/"
+  # Intrasite links, these are used during template render for <header> hrefs
+  # and other links
+  localLinks:
+    home: "/"
+    releases: "/release"
+    community: "/community"
+    css: "/css"
+    img: "/img"
+    doc: "/doc"

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main class=release><article>
+<h1>FRRouting Releases</h1>
+{{ .Content }}<div class=release-timeline><ol>{{ range .Pages }}
+<li><div>
+<span class=release-title><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></span>
+<time datetime="{{ dateFormat "2006-01-02" .Date }}" class=release-date>{{ dateFormat "Jan 2, 2006" .Date }}</time>
+</div></li>
+{{ end }}</ol></div>
+</article></main>
+{{ end }}
+

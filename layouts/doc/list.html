@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main><article>
+{{ range $n, $p := .Pages }}
+<h1>{{ or $p.Title $p.Path }}</h1>
+<section>{{ .Content }}</section>
+{{ if ne (add 1 $n ) (len $.Pages) }}<hr/>{{end}}
+{{ end }}
+</main></article>
+{{ end }}

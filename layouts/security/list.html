@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main>
+<h1> {{ .Title }}</h1>
+<article>
+{{ .Content }}
+<table><tr>
+<th>Name</th>
+<th>Versions Affected</th>
+<th>Disclosure Date</th>
+<th>Severity</th>
+</tr>
+{{ range .Pages }}
+<tr>
+<th><a href="{{ .RelPermalink }}">{{ .Title }}</a></th>
+<td>{{ range .Params.affecting }}
+	{{ . }}<br>
+{{ end }}</td>
+{{ if .Params.reported }}
+<td>{{ dateFormat "Jan 2, 2006" .Params.reported }}</td>
+{{ else }}
+<td>...</td>
+{{ end }}
+<td>{{ .Params.severity }}</td>
+</tr>
+{{ end }}
+</table></article></main>
+{{ end }}

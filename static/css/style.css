@@ -1,0 +1,250 @@
+/* Global style */
+body {
+	margin: 0;
+	color: #36424A;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body > main, body > header, body > footer { padding: 30px 40px }
+
+/* Make the main content less spread-out */
+main { max-width: 112ch; margin: auto }
+
+/* ... except for the homepage */
+main.homepage { max-width: 100% }
+main.homepage, body > header {
+	color: white;
+	background-color: rgb(54, 66, 74);
+}
+
+article { text-align: justify }
+
+#eyecatch-desc {
+	display: flex;
+}
+
+.homepage #short-desc {
+	max-width: 112ch;
+}
+
+.homepage #eyecatch {
+	/* margin: -50px 0; */
+}
+
+#eyecatch {
+	flex-grow: 1;
+	text-align: center;
+	position: relative;
+	margin: 0 0 0 20px;
+}
+
+#eyecatch-wipe {
+	background-image: linear-gradient(#f48020, #f48020);
+	transition: background-size .6s ease-in-out, border-radius 0.6s;
+	background-size: 8px;
+	background-position: 0 100%;
+	background-repeat: repeat-y;
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0 10px;
+}
+
+#eyecatch-wipe {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.contributor-grid {
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 15px;
+}
+
+ul.contributor-grid { list-style: none; }
+
+.contributor-grid > * { padding: 5px 10px }
+
+#eyecatch {
+	min-width: 500px;
+}
+
+#flavortext {
+	color: white;
+	font-size: 5rem;
+	font-weight: lighter;
+}
+
+#flavortext {
+	transition: opacity 0.3s;
+}
+
+#eyecatch img {
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	max-width: calc(100% - 20px);
+	min-width: 250px;
+}
+
+@media only screen and (max-width: 300ch) {
+	#flavortext {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (max-width: 200ch) {
+	#eyecatch-desc { flex-direction: column }
+	#eyecatch { margin: 0 }
+}
+
+.notransition {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+.homepage h1 {
+	font-size: 3rem;
+	font-weight: lighter;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+}
+
+.two-button {
+	margin: 20px 0;
+	display: flex;
+	gap: 20px;
+}
+
+.two-button > * {
+	padding: 10px 40px;
+	border: 1px solid;
+	font-weight: bold;
+}
+
+a#download {
+	border-color: white;
+	color: white
+}
+
+a#connect {
+	border-color: orange;
+	color: white;
+	background-image: linear-gradient(orange, orange);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 50px;
+	text-decoration: none;
+	transition: background-size .2s;
+}
+
+#connect:hover{
+	color: orange;
+	background-size: 0.1px 0.1px;
+}
+
+a#download:hover { color: orange }
+
+#top-icons {
+	display: flex;
+	justify-content: space-between;
+}
+
+hr { color: white }
+
+nav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px 0;
+	justify-content: space-around;
+	margin: 0;
+	list-style: none;
+	gap: 5ch;
+}
+
+.release-timeline ol {
+	list-style-type: none;
+	padding: 0;
+}
+
+.release-timeline ol:before {
+	background: black;
+	width: 10px;
+	height: 5px;
+}
+
+.release-timeline li > div {
+	position: relative;
+	bottom: 0;
+	left: 50px;
+}
+
+.release-timeline li:after {
+	content: '';
+	position: absolute;
+	z-index: 2;
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	top: calc(50% - 10px);
+	border: 1px solid;
+	border-radius: 15%;
+}
+
+.release-timeline li {
+	position: relative;
+	margin: 25px 0;
+}
+
+.release-timeline {
+	position: relative
+}
+
+.release-timeline ol:after {
+	content: '';
+	width: 2px;
+	height: calc(100% - 20px); /* Don't stick out from squre things */
+	bottom: 10px; /* Half a square on bottom, half on top */
+	left: 10px;
+	position: absolute;
+	background-color: black;
+}
+
+.release-date {
+	display: block;
+	color: gray;
+}
+
+/* Document-wide niceties */
+a {
+	text-decoration: none;
+	transition: color .4s;
+	color: darkorange;
+}
+
+table { margin: auto }
+
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid;
+}
+
+th, td {
+	padding: 2px 10px;
+	text-align: center
+}
+
+header a {
+	color: orange
+}
+

@@ -1,0 +1,9 @@
+{{ define "title" }}
+	{{ or .Title .File.BaseFileName | title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<main><article>
+	<h1>{{ or .Title .File.BaseFileName | title }}</h1>
+	{{ .Content }}
+</article></main>
+{{ end }}
