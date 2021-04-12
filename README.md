@@ -21,10 +21,9 @@ installed via:
 apt-get install hugo git
 ```
 
-Note that at least Hugo v0.55.0 is required, as some templating partials require
-the `return` keyword introduced in this release. If Hugo is not available in the
-system package manager it may be easily installed as a Go binary according to
-[Hugo's install instructions](https://gohugo.io/getting-started/installing/).
+If Hugo is not available in the system package manager it may be easily
+installed as a Go binary according to [Hugo's install
+instructions](https://gohugo.io/getting-started/installing/).
 
 Documenting a New Release
 -------------------------
@@ -85,12 +84,3 @@ sudo service nginx restart
 
 It may also be possible to automate this workflow using Git hooks.
 
-Troubleshooting
----------------
-
-```
-w@gyw:/var/www/frr-www$ hugo
-Error: "/var/www/frr-www/layouts/partials/most-recent-release.tmpl:2:1": parse failed: template: partials/most-recent-release.tmpl:2: function "return" not defined
-```
-
-Install at least Hugo v0.55.0!

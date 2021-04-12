@@ -12,7 +12,7 @@
 			src="{{ .Site.Params.localLinks.img }}/frrouting.svg"></div>
 	</div>
 			<div class=two-button>
-				<a id=download href="{{ relref . ((partial "most-recent-release.tmpl" .).File.Path) }}">Download</a>
+				<a id=download href="{{ partial "most-recent-release.tmpl" . }}">Download</a>
 				<a id=connect href="{{ .Site.Params.extLinks.slack }}">Connect</a>
 			</div>
 	</article>
