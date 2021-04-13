@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	color: #36424A;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
 }
 
 body > main, body > header, body > footer { padding: 30px 40px }
@@ -46,10 +47,17 @@ article { text-align: justify }
 	background-repeat: repeat-y;
 	z-index: 2;
 	position: absolute;
-	width: 100%;
+	overflow: hidden;
+	width: calc(100% - 10px);
 	height: 100%;
 	padding: 0 10px;
 }
+
+#top-icons {
+	display: flex;
+	justify-content: space-between;
+}
+
 
 #eyecatch-wipe {
 	display: flex;
@@ -64,6 +72,7 @@ article { text-align: justify }
 	align-items: center;
 	justify-content: space-around;
 	border-radius: 15px;
+	padding: 0;
 }
 
 ul.contributor-grid { list-style: none; }
@@ -71,7 +80,6 @@ ul.contributor-grid { list-style: none; }
 .contributor-grid > * { padding: 5px 10px }
 
 #eyecatch {
-	min-width: 500px;
 }
 
 #flavortext {
@@ -91,17 +99,7 @@ ul.contributor-grid { list-style: none; }
 	max-width: calc(100% - 20px);
 	min-width: 250px;
 }
-
-@media only screen and (max-width: 300ch) {
-	#flavortext {
-		font-size: 3rem;
-	}
-}
-
-@media only screen and (max-width: 200ch) {
-	#eyecatch-desc { flex-direction: column }
-	#eyecatch { margin: 0 }
-}
+article { max-width: 100% }
 
 .notransition {
 	-webkit-transition: none !important;
@@ -154,11 +152,6 @@ a#connect {
 }
 
 a#download:hover { color: orange }
-
-#top-icons {
-	display: flex;
-	justify-content: space-between;
-}
 
 hr { color: white }
 
@@ -225,12 +218,37 @@ nav > ul {
 	color: gray;
 }
 
+/* Media rules */
+@media only screen and (max-width: 300ch) {
+	#flavortext {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (max-width: 200ch) {
+	#eyecatch-desc { flex-direction: column }
+	#eyecatch { margin: 0 }
+}
+
+@media only screen and (max-width: 500px) {
+	#top-icons { display: block }
+	body > main, body > header, body > footer { padding: 10px 20px }
+	#eyecatch { min-width: initial }
+	#eyecatch img { min-width: 100px }
+	.two-button { flex-direction: column; text-align: center; }
+	.homepage h1 { font-size: 2rem; }
+	article { text-align: initial }
+	#flavortext { font-size: 2rem }
+}
+
 /* Document-wide niceties */
 a {
 	text-decoration: none;
 	transition: color .4s;
 	color: darkorange;
 }
+
+img { max-width: 100% }
 
 table { margin: auto }
 
