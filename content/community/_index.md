@@ -16,8 +16,8 @@ Google Summer of Code
 ---------------------
 
 The FRRouting community invites interested participants to contribute to FRR
-through the  Google Summer of Code (GSoc). More details and eiligibility are
-avaialble on our [GSoC portal](https://frrouting.github.io/frr-gsoc/).
+through the  Google Summer of Code (GSoc). More details and eligibility are
+available on our [GSoC portal](https://frrouting.github.io/frr-gsoc/).
 
 ---
 
