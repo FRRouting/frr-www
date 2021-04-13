@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main class=release><article>
+<h1>{{ or .Title .File.Dir }} </h1>
+{{ .Content }}
+<ul>{{ range .Pages }}
+<li><a href="{{ .RelPermalink }}">{{ or .LinkTitle .File.BaseFileName }}</a></li>
+{{ end }}</ol>
+</article></main>
+{{ end }}
+

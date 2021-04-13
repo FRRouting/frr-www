@@ -1,0 +1,29 @@
+{{ define "title" -}}
+{{ .Site.Title }}
+{{- end }}
+
+{{- define "main" -}}
+<main class=homepage>
+	<article>
+	<h1>FRRouting Project</h1>
+	<div id=eyecatch-desc>
+			<article id=short-desc>{{ .Content | markdownify }}</article>
+			<div id=eyecatch><div id=eyecatch-wipe><h2 id=flavortext></h2></div><img
+			src="{{ .Site.Params.localLinks.img }}/frrouting.svg"></div>
+	</div>
+			<div class=two-button>
+				<a id=download href="{{ partial "most-recent-release.tmpl" . }}">Download</a>
+				<a id=connect href="{{ .Site.Params.extLinks.slack }}">Connect</a>
+			</div>
+	</article>
+	<hr/>
+	<article>
+	<h2>Contributors</h2>
+	{{- block "contributors" . }} {{ end }}
+	</article>
+</main>
+{{- end }}
+
+{{- define "scripts" -}}
+<script src='/js/homepage.js'></script>
+{{- end }}

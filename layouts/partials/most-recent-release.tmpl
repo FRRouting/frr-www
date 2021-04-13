@@ -1,0 +1,3 @@
+{{ $pages := (where site.RegularPages.ByDate "Section" "release").Reverse -}}
+{{ $page := index $pages 0 -}}
+{{ relref . $page.File -}}

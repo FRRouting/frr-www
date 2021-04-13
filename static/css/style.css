@@ -1,0 +1,278 @@
+/* Global style */
+body {
+	margin: 0;
+	color: #36424A;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+
+/* Headings are in a different typeface */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Padding for main elements */
+body > main, body > header, body > footer { padding: 30px 40px }
+
+/* Make the main content less spread-out */
+main { max-width: 112ch; margin: auto }
+
+/* ... except for the homepage */
+main.homepage { max-width: 100% }
+main.homepage, body > header {
+	color: white;
+	background-color: rgb(54, 66, 74);
+}
+
+/* FRR logo, flavortext, and description */
+#eyecatch-desc {
+	display: flex;
+}
+
+/* What is FRR... blurb */
+.homepage #short-desc {
+	max-width: 112ch;
+}
+
+/* FRR logo + flavortext */
+#eyecatch {
+	flex-grow: 1;
+	text-align: center;
+	position: relative;
+	margin: 0 0 0 20px;
+}
+
+/* Background that wipes flavortext left on first visit */
+#eyecatch-wipe {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	background-image: linear-gradient(#f48020, #f48020);
+	transition: background-size .6s ease-in-out, border-radius 0.6s;
+	background-size: 8px;
+	background-position: 0 100%;
+	background-repeat: repeat-y;
+	z-index: 2;
+	position: absolute;
+	overflow: hidden;
+	width: calc(100% - 10px);
+	height: 100%;
+	padding: 0 10px;
+}
+
+/* FRR logo */
+#eyecatch img {
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	max-width: calc(100% - 20px);
+	min-width: 250px;
+}
+
+/* Flavortext inside eyecatch on homepage */
+#flavortext {
+	color: white;
+	font-size: 5rem;
+	font-weight: lighter;
+	transition: opacity 0.3s;
+}
+
+/* Download, connect */
+.two-button {
+	margin: 20px 0;
+	display: flex;
+	gap: 20px;
+}
+
+.two-button > * {
+	padding: 10px 40px;
+	border: 1px solid;
+	font-weight: bold;
+}
+
+/* Download button on homepage */
+a#download {
+	border-color: white;
+	color: white
+}
+
+/* Connect button on homepage */
+a#connect {
+	border-color: orange;
+	color: white;
+	background-image: linear-gradient(orange, orange);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 50px;
+	text-decoration: none;
+	transition: background-size .2s;
+}
+
+/* Cool on-hover effects */
+#connect:hover{
+	color: orange;
+	background-size: 0.1px 0.1px;
+}
+
+/* ... same as above */
+a#download:hover { color: orange }
+
+/* <nav> in <header> */
+#top-icons {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Contributor images on homepage */
+.contributor-grid {
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 15px;
+	padding: 0;
+	list-style: none;
+}
+
+.contributor-grid > * { padding: 5px 10px }
+
+/* Be nice to non-JS friends */
+.notransition {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+/* Biggest heading on homepage "FRRouting Project" */
+.homepage h1 {
+	font-size: 3rem;
+	font-weight: lighter;
+	margin: 0;
+}
+
+/* <header> <nav> */
+nav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px 0;
+	justify-content: space-around;
+	margin: 0;
+	list-style: none;
+	gap: 5ch;
+}
+
+/* Neat timeline layout for releases */
+.release-timeline ol {
+	list-style-type: none;
+	padding: 0;
+}
+
+.release-timeline ol:before {
+	background: black;
+	width: 10px;
+	height: 5px;
+}
+
+/* Neat layout for release timeline */
+.release-timeline {
+	position: relative
+}
+
+/* Release description */
+.release-timeline li > div {
+	position: relative;
+	bottom: 0;
+	left: 50px;
+}
+
+/* Little box acting as <li> identifier */
+.release-timeline li:after {
+	content: '';
+	position: absolute;
+	z-index: 2;
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	top: calc(50% - 10px);
+	border: 1px solid;
+	border-radius: 15%;
+}
+
+.release-timeline li {
+	position: relative;
+	margin: 25px 0;
+}
+
+/* Form the line of continuity between releases */
+.release-timeline ol:after {
+	content: '';
+	width: 2px;
+	height: calc(100% - 20px); /* Don't stick out from squre things */
+	bottom: 10px; /* Half a square on bottom, half on top */
+	left: 10px;
+	position: absolute;
+	background-color: black;
+}
+
+.release-date {
+	display: block;
+	color: gray;
+}
+
+/* Rules for small screens */
+@media only screen and (max-width: 300ch) {
+	#flavortext {
+		font-size: 3rem;
+	}
+}
+
+/* Rules for smaller screens */
+@media only screen and (max-width: 200ch) {
+	#eyecatch-desc { flex-direction: column }
+	#eyecatch { margin: 0 }
+}
+
+/* Rules for smallest screens (mostly mobile here) */
+@media only screen and (max-width: 500px) {
+	#top-icons { display: block }
+	body > main, body > header, body > footer { padding: 10px 20px }
+	#eyecatch { min-width: initial }
+	#eyecatch img { min-width: 100px }
+	.two-button { flex-direction: column; text-align: center; }
+	.homepage h1 { font-size: 2rem; }
+	article { text-align: initial }
+	#flavortext { font-size: 2rem }
+}
+
+/* Document-wide niceties */
+a {
+	text-decoration: none;
+	transition: color .4s;
+	color: darkorange;
+}
+
+img { max-width: 100% }
+
+table { margin: auto }
+
+hr { color: white }
+
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid;
+}
+
+th, td {
+	padding: 2px 10px;
+	text-align: center
+}
+
+header a { color: orange }
+
+article { max-width: 100% }
+
+article { text-align: justify }
+
