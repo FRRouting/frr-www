@@ -2,6 +2,8 @@
 Title: Releases
 ---
 
+FRR is actively developed on [GitHub](https://github.com/FRRouting/frr).
+
 Releases are cut when significant features are added or important bug fixes are
 incorporated into FRR. A release represents a coherent snapshot of FRR. Each
 release below is cut from the `master` branch of our Github repository and then

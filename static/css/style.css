@@ -6,6 +6,12 @@ body {
 	overflow-x: hidden;
 }
 
+/* Headings are in a different typeface */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Padding for main elements */
 body > main, body > header, body > footer { padding: 30px 40px }
 
 /* Make the main content less spread-out */
@@ -18,20 +24,17 @@ main.homepage, body > header {
 	background-color: rgb(54, 66, 74);
 }
 
-article { text-align: justify }
-
+/* FRR logo, flavortext, and description */
 #eyecatch-desc {
 	display: flex;
 }
 
+/* What is FRR... blurb */
 .homepage #short-desc {
 	max-width: 112ch;
 }
 
-.homepage #eyecatch {
-	/* margin: -50px 0; */
-}
-
+/* FRR logo + flavortext */
 #eyecatch {
 	flex-grow: 1;
 	text-align: center;
@@ -39,7 +42,12 @@ article { text-align: justify }
 	margin: 0 0 0 20px;
 }
 
+/* Background that wipes flavortext left on first visit */
 #eyecatch-wipe {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
 	background-image: linear-gradient(#f48020, #f48020);
 	transition: background-size .6s ease-in-out, border-radius 0.6s;
 	background-size: 8px;
@@ -53,45 +61,7 @@ article { text-align: justify }
 	padding: 0 10px;
 }
 
-#top-icons {
-	display: flex;
-	justify-content: space-between;
-}
-
-
-#eyecatch-wipe {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
-
-.contributor-grid {
-	background-color: white;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
-	border-radius: 15px;
-	padding: 0;
-}
-
-ul.contributor-grid { list-style: none; }
-
-.contributor-grid > * { padding: 5px 10px }
-
-#eyecatch {
-}
-
-#flavortext {
-	color: white;
-	font-size: 5rem;
-	font-weight: lighter;
-}
-
-#flavortext {
-	transition: opacity 0.3s;
-}
-
+/* FRR logo */
 #eyecatch img {
 	height: 100%;
 	position: relative;
@@ -99,25 +69,16 @@ ul.contributor-grid { list-style: none; }
 	max-width: calc(100% - 20px);
 	min-width: 250px;
 }
-article { max-width: 100% }
 
-.notransition {
-	-webkit-transition: none !important;
-	-moz-transition: none !important;
-	-o-transition: none !important;
-	transition: none !important;
-}
-
-.homepage h1 {
-	font-size: 3rem;
+/* Flavortext inside eyecatch on homepage */
+#flavortext {
+	color: white;
+	font-size: 5rem;
 	font-weight: lighter;
-	margin: 0;
+	transition: opacity 0.3s;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", sans-serif;
-}
-
+/* Download, connect */
 .two-button {
 	margin: 20px 0;
 	display: flex;
@@ -130,11 +91,13 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
+/* Download button on homepage */
 a#download {
 	border-color: white;
 	color: white
 }
 
+/* Connect button on homepage */
 a#connect {
 	border-color: orange;
 	color: white;
@@ -146,15 +109,51 @@ a#connect {
 	transition: background-size .2s;
 }
 
+/* Cool on-hover effects */
 #connect:hover{
 	color: orange;
 	background-size: 0.1px 0.1px;
 }
 
+/* ... same as above */
 a#download:hover { color: orange }
 
-hr { color: white }
+/* <nav> in <header> */
+#top-icons {
+	display: flex;
+	justify-content: space-between;
+}
 
+/* Contributor images on homepage */
+.contributor-grid {
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 15px;
+	padding: 0;
+	list-style: none;
+}
+
+.contributor-grid > * { padding: 5px 10px }
+
+/* Be nice to non-JS friends */
+.notransition {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+/* Biggest heading on homepage "FRRouting Project" */
+.homepage h1 {
+	font-size: 3rem;
+	font-weight: lighter;
+	margin: 0;
+}
+
+/* <header> <nav> */
 nav > ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -165,6 +164,7 @@ nav > ul {
 	gap: 5ch;
 }
 
+/* Neat timeline layout for releases */
 .release-timeline ol {
 	list-style-type: none;
 	padding: 0;
@@ -176,12 +176,19 @@ nav > ul {
 	height: 5px;
 }
 
+/* Neat layout for release timeline */
+.release-timeline {
+	position: relative
+}
+
+/* Release description */
 .release-timeline li > div {
 	position: relative;
 	bottom: 0;
 	left: 50px;
 }
 
+/* Little box acting as <li> identifier */
 .release-timeline li:after {
 	content: '';
 	position: absolute;
@@ -199,10 +206,7 @@ nav > ul {
 	margin: 25px 0;
 }
 
-.release-timeline {
-	position: relative
-}
-
+/* Form the line of continuity between releases */
 .release-timeline ol:after {
 	content: '';
 	width: 2px;
@@ -218,18 +222,20 @@ nav > ul {
 	color: gray;
 }
 
-/* Media rules */
+/* Rules for small screens */
 @media only screen and (max-width: 300ch) {
 	#flavortext {
 		font-size: 3rem;
 	}
 }
 
+/* Rules for smaller screens */
 @media only screen and (max-width: 200ch) {
 	#eyecatch-desc { flex-direction: column }
 	#eyecatch { margin: 0 }
 }
 
+/* Rules for smallest screens (mostly mobile here) */
 @media only screen and (max-width: 500px) {
 	#top-icons { display: block }
 	body > main, body > header, body > footer { padding: 10px 20px }
@@ -252,6 +258,8 @@ img { max-width: 100% }
 
 table { margin: auto }
 
+hr { color: white }
+
 table, th, td {
 	border-collapse: collapse;
 	border: 1px solid;
@@ -262,7 +270,9 @@ th, td {
 	text-align: center
 }
 
-header a {
-	color: orange
-}
+header a { color: orange }
+
+article { max-width: 100% }
+
+article { text-align: justify }
 
