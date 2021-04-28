@@ -21,6 +21,7 @@ params:
   # Off-site links, aggregated here in case they need to be changed later
   extLinks:
     github: "https://github.com/FRRouting/frr"
+    frrwww: "https://github.com/FRRouting/frr-www"
     ci: "https://ci1.netdef.org/browse/FRR"
     mailList: "https://lists.frrouting.org"
     userDoc: "http://docs.frrouting.org/en/latest/"
