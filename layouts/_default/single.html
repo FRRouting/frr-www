@@ -4,6 +4,7 @@
 {{ define "main" }}
 <main><article>
 	<h1>{{ or .Title .File.BaseFileName | title }}</h1>
+	{{ if .Date }}<time class=publish-date datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "Jan 2, 2006" .Date  }}</time>{{ end }}
 	{{ .Content }}
 </article></main>
 {{ end }}
