@@ -2,8 +2,6 @@
 Title: Maintainers
 ---
 
-# Maintainers
-
 FRR maintainers have commit access to the [FRR git repositories](https://github.com/frrouting).  This list is also available on [online](https://github.com/orgs/frrouting/teams/maintainers).
 
 - Donatas Abraitis - [@ton31337](https://github.com/ton31337)

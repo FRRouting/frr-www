@@ -20,8 +20,8 @@ languageCode: "en-US"
 params:
   # Off-site links, aggregated here in case they need to be changed later
   extLinks:
-    slack: "https://join.slack.com/t/frrouting/shared_invite/enQtNjM1MTkzMDQ0Mzg2LTAxZmQ5ODk0NTE1NjZmOWNkNmJkODc3YWZhOWE3NjQ1MzI2YWMzZmViNzVmYjBhYWNkNDYwMjVkOWMzMWZkYWM"
     github: "https://github.com/FRRouting/frr"
+    frrwww: "https://github.com/FRRouting/frr-www"
     ci: "https://ci1.netdef.org/browse/FRR"
     mailList: "https://lists.frrouting.org"
     userDoc: "http://docs.frrouting.org/en/latest/"
