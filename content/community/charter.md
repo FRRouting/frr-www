@@ -1,9 +1,8 @@
 ---
-Title: Charter
+Title: FRRouting Project Charter
 ---
 
 ## THE LINUX FOUNDATION
-# FRRouting Project Charter (the “Charter”)
 
 *Effective : April 3, 2017*
 

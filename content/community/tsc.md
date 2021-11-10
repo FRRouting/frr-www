@@ -2,8 +2,6 @@
 title: Technical Steering Committee
 ---
 
-# Technical Steering Committee
-
 The Technical Steering Committee (TSC) consists of up to 6 members who are responsible for technical oversight of FRRouting, at maximum 2 members can be from the same company.  TSC members are listed by name, along with existing and prior maintainers, in the MAINTAINERS document accompanying FRRouting source and posted on the FRRouting website.  TSC members may coexist with any other role in the FRRouting.
 
 The TSC members are elected for 1 year terms, without any term limit, by the currently active Maintainers each October or with a special election held when a TSC member either steps down or loses their TSC status.  The election is conducted as a multi-winner Single Transferable Vote; a vote administrator is nominated by motion and approved by the TSC.

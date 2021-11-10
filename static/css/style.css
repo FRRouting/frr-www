@@ -164,6 +164,11 @@ nav > ul {
 	gap: 5ch;
 }
 
+/* <footer> <nav> */
+footer nav > ul {
+	justify-content: center;
+}
+
 /* Neat timeline layout for releases */
 .release-timeline ol {
 	list-style-type: none;
@@ -217,7 +222,7 @@ nav > ul {
 	background-color: black;
 }
 
-.release-date {
+.publish-date, .release-date {
 	display: block;
 	color: gray;
 }
@@ -276,3 +281,4 @@ article { max-width: 100% }
 
 article { text-align: justify }
 
+article figure { text-align: center }

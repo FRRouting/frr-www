@@ -29,6 +29,7 @@
 	{{- block "releases" . }}
 	{{- end }}
     {{ block "footer" . }}
-	<footer>{{- partial  "copyright.tmpl" }}</footer>
+	<footer><hr/><p>{{- partial  "site-info.tmpl" }}</p>
+	<p>{{- partial "copyright.tmpl" }}</p></footer>
 	{{- end }}
 </body></html>
