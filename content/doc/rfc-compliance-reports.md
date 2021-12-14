@@ -17,4 +17,6 @@ capabilities as a full routing suite.
   [BGP-AS4](/test-results/BGP-AS4_extended_results.pdf) |
   [BGPPLUS-AS4](/test-results/BGP-AS4_extended_results.pdf)
 - [LDP](/test-results/LDP_extended_results.pdf)
-
+- [PIM](/test-results/PIM_extended_results.pdf)
+- [IGMPv2](/test-results/IGMPv2_extended_results.pdf)
+- [IGMPv3](/test-results/IGMPv3_extended_results.pdf)
