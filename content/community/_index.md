@@ -11,7 +11,7 @@ the FRR community.
 {{< figure
 	src="/img/icon-slack.png"
 	link="https://join.slack.com/t/frrouting/shared_invite/enQtNjM1MTkzMDQ0Mzg2LTAxZmQ5ODk0NTE1NjZmOWNkNmJkODc3YWZhOWE3NjQ1MzI2YWMzZmViNzVmYjBhYWNkNDYwMjVkOWMzMWZkYWM"
-	caption="[Join](https://web.archive.org/web/20210314013821im_/https://frrouting.org/static/img/icons/icon-slack.png) our Slack community!"
+	caption="[Join](https://join.slack.com/t/frrouting/shared_invite/enQtNjM1MTkzMDQ0Mzg2LTAxZmQ5ODk0NTE1NjZmOWNkNmJkODc3YWZhOWE3NjQ1MzI2YWMzZmViNzVmYjBhYWNkNDYwMjVkOWMzMWZkYWM) our Slack community!"
 >}}
 
 Additionally there are [mailing lists](https://lists.frrouting.org/listinfo)
