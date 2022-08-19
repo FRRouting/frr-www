@@ -28,7 +28,7 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 
 # Technical Steering Committee
 
-[Technical Steering Committee](tsc.html) Members are responsible for technical oversight of FRRouting Project.
+[Technical Steering Committee](/community/tsc) Members are responsible for technical oversight of FRRouting Project.
 
 The current members of the TSC are:
 
