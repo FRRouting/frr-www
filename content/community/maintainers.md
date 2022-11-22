@@ -37,6 +37,6 @@ The current members of the TSC are:
 - Mark Stapp - [@mjstapp](https://github.com/mjstapp)
 - Russ White - [@riw777](https://github.com/riw777)
 - Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
-- Quentin Young - [@qlyoung](https://github.com/qlyoung)
+- Jafar Al-Gharaibeh - [@jafaral](https://github.com/jafaral)
 
-The last election was held in Oct 2020. The next regular election for TSC members will be held in October 2021.
+The last election was held in Oct 2022. The next regular election for TSC members will be held in October 2023.
