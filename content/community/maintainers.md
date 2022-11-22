@@ -25,6 +25,13 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 - Paul Ziemba - [@paulzlabn](https://github.com/paulzlabn)
 - Stephen Worley - [@sworleys](https://github.com/sworleys)
 - Santosh P K - [@spantik](https://github.com/spantik)
+- Mobashshera Rasool - [@mobash-rasool](https://github.com/mobash-rasool)
+- Pushpasis Sarkar - [@pushpasis](https://github.com/pushpasis)
+- Sarita Patra - [@patrasar](https://github.com/patrasar)
+- Igor Ryzhov - [@idryzhov](https://github.com/idryzhov)
+- Christian Hopps - [@choppsv1](https://github.com/choppsv1)
+- Kaushik Nath - [@KaushikNiral](https://github.com/KaushikNiral)
+- Patrick Ruddy - [@pjdruddy](https://github.com/pjdruddy)
 
 # Technical Steering Committee
 
