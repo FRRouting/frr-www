@@ -15,11 +15,21 @@ Repositories for these can be found at the following locations:
 * RPM Packages - https://rpm.frrouting.org/
 * Snaps - https://snapcraft.io/frr
 
-Docker images are also available on a best-effort basis:
+Docker images are also available on a best-effort basis. Until FRR 8.4.1,
+Docker images were uploaded to Dockerhub with the tag scheme
+`frrouting/frr:vX.Y.Z` where `X.Y.Z` is the version number (e.g. FRR 8.4.1 was
+tagged `frrouting/frr:v8.4.1`).
 
-https://hub.docker.com/r/frrouting/frr
+Starting with FRR 8.4.2, we have switched to Quay.io for image hosting. The tag
+scheme has changed and is now `quay.io/frrouting/frr:X.Y.Z` where `X.Y.Z` is
+the version number (e.g. FRR 8.4.2 is tagged `frrouting/frr:8.4.2`).
 
-Images corresponding to releases are named `frrouting/frr:vX.Y.Z`.
+Available tags may be viewed here:
+
+https://quay.io/repository/frrouting/frr?tab=tags
+
+We plan to reupload all images that were previously uploaded to Dockerhub to
+Quay over time.
 
 Source tarballs and release notes are posted on GitHub:
 
