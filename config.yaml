@@ -26,6 +26,7 @@ params:
     mailList: "https://lists.frrouting.org"
     userDoc: "http://docs.frrouting.org/en/latest/"
     devDoc: "http://docs.frrouting.org/projects/dev-guide/en/latest/"
+    slackJoinLink: "https://join.slack.com/t/frrouting/shared_invite/zt-1wjztl0jp-4hI5kBoSCtu8Eh_ILXdVlg"
   # Intrasite links, these are used during template render for <header> hrefs
   # and other links
   localLinks:
