@@ -3,7 +3,7 @@ Title: FRRouting Community
 ---
 
 The FRR community organizes itself on [its Slack
-instance](https://join.slack.com/t/frrouting/shared_invite/enQtNjM1MTkzMDQ0Mzg2LTAxZmQ5ODk0NTE1NjZmOWNkNmJkODc3YWZhOWE3NjQ1MzI2YWMzZmViNzVmYjBhYWNkNDYwMjVkOWMzMWZkYWM).
+instance](https://join.slack.com/t/frrouting/shared_invite/zt-1wjztl0jp-4hI5kBoSCtu8Eh_ILXdVlg).
 Information regarding upcoming features, meetings, and developer discussion can
 be found there; it is by-far the fastest way to reach out to and interact with
 the FRR community.
@@ -11,7 +11,7 @@ the FRR community.
 {{< figure
 	src="/img/icon-slack.png"
 	link="https://join.slack.com/t/frrouting/shared_invite/enQtNjM1MTkzMDQ0Mzg2LTAxZmQ5ODk0NTE1NjZmOWNkNmJkODc3YWZhOWE3NjQ1MzI2YWMzZmViNzVmYjBhYWNkNDYwMjVkOWMzMWZkYWM"
-	caption="[Join](https://join.slack.com/t/frrouting/shared_invite/enQtNjM1MTkzMDQ0Mzg2LTAxZmQ5ODk0NTE1NjZmOWNkNmJkODc3YWZhOWE3NjQ1MzI2YWMzZmViNzVmYjBhYWNkNDYwMjVkOWMzMWZkYWM) our Slack community!"
+	caption="[Join](https://join.slack.com/t/frrouting/shared_invite/zt-1wjztl0jp-4hI5kBoSCtu8Eh_ILXdVlg) our Slack community!"
 >}}
 
 Additionally there are [mailing lists](https://lists.frrouting.org/listinfo)
