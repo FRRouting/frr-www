@@ -9,6 +9,7 @@ capabilities as a full routing suite.
 - [RIP](/test-results/RIP_extended_results.pdf) |
   [RIPNG](/test-results/RIPNG_extended_results.pdf)
 - [OSPF](/test-results/OSPF_extended_results.pdf) |
+  [OSPFGR](/test-results/OSPFv2GR_extended_results.pdf) |
   [OSPFv3](/test-results/OSPFV3_extended_results.pdf)
 - [ISIS](/test-results/ISIS_extended_results.pdf) |
   [ISISv6](/test-results/ISISV6_extended_results.pdf)
