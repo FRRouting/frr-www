@@ -20,3 +20,5 @@ capabilities as a full routing suite.
 - [PIM](/test-results/PIM_extended_results.pdf)
 - [IGMPv2](/test-results/IGMPv2_extended_results.pdf)
 - [IGMPv3](/test-results/IGMPv3_extended_results.pdf)
+- [PIMv6](/test-results/PIMv6_extended_results.pdf)
+- [MLDv1](/test-results/MLDv1_extended_results.pdf)
