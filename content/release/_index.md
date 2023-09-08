@@ -35,7 +35,7 @@ Source tarballs and release notes are posted on GitHub:
 
 https://github.com/FRRouting/frr/releases
 
-Installation instructions are available in the [user docs](http://docs.frrouting.org/en/latest/installation.html).
+Installation instructions are available in the [user docs](https://docs.frrouting.org/en/latest/installation.html).
 
 Release notes are also posted to this website, and are identical to those on
 GitHub.
