@@ -9,7 +9,8 @@ be found there; it is by-far the fastest way to reach out to and interact with
 the FRR community.
 
 {{< figure
-	src="/img/icon-slack.png"
+	src="/img/icon-slack.svg"
+	alt="Slack icon"
 	caption="[Join]({{< param extLinks.slackJoinLink >}}) our Slack community!"
 >}}
 
