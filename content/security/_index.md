@@ -13,6 +13,10 @@ to security at lists dot frrouting dot org.  In any such report, please:
 
 * do not batch more than one report into a single e-mail.  Please send one
   e-mail per independent issue.
+* while we appreciate reports for ``eigrpd`` and ``nhrpd``, these 2 daemons are
+  documented in the [main FRR README file](https://github.com/FRRouting/frr/blob/master/README.md?plain=1#L32)
+  as being in _alpha_ state and will not receive security advisories or CVE
+  identifiers.
 * if you believe it necessary we'll make arrangements for encrypted
   communication as needed.
 * if you used AI or LLM tools to discover or explore the issue, we require that
