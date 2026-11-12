@@ -46,4 +46,4 @@ The current members of the TSC are:
 - Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
 - Jafar Al-Gharaibeh - [@jafaral](https://github.com/jafaral)
 
-The last election was held in Oct 2024. The next regular election for TSC members will be held in October 2025.
+The last election was held in Oct 2025. The next regular election for TSC members is slightly delayed and will be held end of 2026.
