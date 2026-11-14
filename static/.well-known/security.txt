@@ -1,0 +1,10 @@
+Canonical: https://frrouting.org/.well-known/security.txt
+Policy: https://frrouting.org/security/
+Contact: mailto:security@lists.frrouting.org
+Preferred-Languages: en
+Expires: 2027-10-31T23:59:59Z
+
+# Encryption: if you feel it is necessary, please contact us (without including
+#   any information regarding the particular issue) and ask for a PGP key;
+#   we will then generate one and publish it here (anchoring through the TLS
+#   certificate for frrouting.org)

@@ -4,14 +4,14 @@ Title: Maintainers
 
 FRR maintainers have commit access to the [FRR git repositories](https://github.com/frrouting).  This list is also available on [online](https://github.com/orgs/frrouting/teams/maintainers).
 
-- Donatas Abraitis - [@ton31337](https://github.com/ton31337)
-- Jafar Al-Gharaibeh - [@jafaral](https://github.com/jafaral)
+- Donatas Abraitis - [@ton31337](https://github.com/ton31337) §
+- Jafar Al-Gharaibeh - [@jafaral](https://github.com/jafaral) §
 - Lou Berger - [@louberger](https://github.com/louberger)
 - Olivier Dugeon - [@odd22](https://github.com/odd22)
 - Philippe Guibert - [@pguibert6WIND](https://github.com/pguibert6WIND)
 - Christian Hopps - [@choppsv1](https://github.com/choppsv1)
 - Vincent Jardin - [@vjardin](https://github.com/vjardin)
-- David Lamparter - [@eqvinox](https://github.com/eqvinox)
+- David Lamparter - [@eqvinox](https://github.com/eqvinox) §
 - Pascal Mathis - [@ppmathis](https://github.com/ppmathis)
 - Sarita Patra - [@patrasar](https://github.com/patrasar)
 - Mobashshera Rasool - [@mobash-rasool](https://github.com/mobash-rasool)
@@ -20,15 +20,18 @@ FRR maintainers have commit access to the [FRR git repositories](https://github.
 - Pushpasis Sarkar - [@pushpasis](https://github.com/pushpasis)
 - Carmine Scarpitta - [@cscarpitta](https://github.com/cscarpitta)
 - Chirag Shah - [@chiragshah6](https://github.com/chiragshah6)
-- Donald Sharp - [@donaldsharp](https://github.com/donaldsharp)
+- Donald Sharp - [@donaldsharp](https://github.com/donaldsharp) §
 - Sri Mohana Singamsetty [@srimohans](https://github.com/srimohans)
-- Mark Stapp - [@mjstapp](https://github.com/mjstapp)
-- Renato Westphal - [@rwestphal](https://github.com/rwestphal)
-- Russ White - [@riw777](https://github.com/riw777)
-- Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
+- Mark Stapp - [@mjstapp](https://github.com/mjstapp) §
+- Renato Westphal - [@rwestphal](https://github.com/rwestphal) §
+- Russ White - [@riw777](https://github.com/riw777) §
+- Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr) §
 - Stephen Worley - [@sworleys](https://github.com/sworleys)
-- Quentin Young - [@qlyoung](https://github.com/qlyoung)
+- Quentin Young - [@qlyoung](https://github.com/qlyoung) §
 - Rafael Zalamena - [@rzalamena](https://github.com/rzalamena)
+
+§: members of the security team.
+
 
 # Technical Steering Committee
 
@@ -43,4 +46,4 @@ The current members of the TSC are:
 - Martin Winter - [@mwinter-osr](https://github.com/mwinter-osr)
 - Jafar Al-Gharaibeh - [@jafaral](https://github.com/jafaral)
 
-The last election was held in Oct 2024. The next regular election for TSC members will be held in October 2025.
+The last election was held in Oct 2025. The next regular election for TSC members is slightly delayed and will be held end of 2026.
