@@ -25,3 +25,9 @@ to security at lists dot frrouting dot org.  In any such report, please:
 * except for machine translation, the security report e-mail itself must be
   written without the use of AI/LLM tools.  This is to demonstrate that you
   have understood and verified the issue you are reporting.
+
+The [NetDEF CNA](https://cna.netdef.org/) issues CVE identifiers for security
+issues in FRRouting and maintains a [list of all CVE records related to
+FRR](https://cna.netdef.org/frrouting/cve/).
+
+**Please note that the table below is no longer updated.**
